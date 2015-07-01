@@ -16,22 +16,6 @@ set :fonts_dir, 'assets/fonts'
 # ----- Images ----- #
 
 activate :automatic_image_sizes
-
-# --------------------------------------
-#   Content
-# --------------------------------------
-
-# ----- Blog ----- #
-
-# activate :blog do |blog|
-#   blog.layout = "layout_article"
-#   blog.permalink = "{title}"
-#   blog.prefix = "blog"
-#   blog.sources = "articles/{title}.html"
-# end
-
-# ----- Directories for assets (needs to be activated after blog) ----- #
-
 activate :directory_indexes
 
 # --------------------------------------
@@ -52,4 +36,10 @@ configure :build do
   activate :minify_javascript
   activate :relative_assets
   activate :gzip
+end
+
+# ----- Deploy ----- #
+
+activate :deploy do |deploy|
+  deploy.method = :git
 end
