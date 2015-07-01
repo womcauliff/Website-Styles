@@ -4,7 +4,9 @@
 
 This repository contains the front-end styles for the main Northland website. While the main site is built on top of a CMS, this repo is built on top of [Middleman](https://middlemanapp.com/).
 
----
+### Site Preview
+
+The current version of this site should always be accessible at [northlandchurch.github.io/Website-Styles](http://northlandchurch.github.io/Website-Styles). Issues, mentioned below, should always be created in reference to this link.
 
 ### Project Management
 
