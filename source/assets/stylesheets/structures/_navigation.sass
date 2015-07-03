@@ -1,0 +1,68 @@
+// *************************************
+//
+//   Navigation
+//   -> Global, fixed, header nav
+//
+// *************************************
+
+.navigation
+  left: 0
+  margin: 0 auto
+  max-width: $b-maxWidth
+  padding: 0 ($g-gutter / 2)
+  position: fixed
+  right: 0
+  top: 0
+  z-index: $z-nav
+  +respond-to($g-m)
+    padding: 0 $g-gutter
+    &::before
+      background-image: linear-gradient(rgba($c-black, 0.75) 0%, rgba($c-black, 0.1) 75%, rgba($c-black, 0))
+      content: ''
+      height: $b-space * 10
+      left: 0
+      position: fixed
+      right: 0
+      top: 0
+      z-index: $z-nav-backdrop
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .structure--modifier
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// ----- Banner ----- //
+
+.navigation-banner
+  background: rgba($c-black, 0.9)
+  clear: both
+  overflow: hidden
+
+// ----- Primary ----- //
+
+.navigation-primary
+  +respond-to($g-m)
+    float: right
+
+// ----- Secondary ----- //
+
+.navigation-secondary
+  +respond-to($g-m)
+    float: right

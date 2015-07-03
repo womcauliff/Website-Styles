@@ -8,7 +8,9 @@
 .row
   background: $c-background
   overflow: hidden
-  padding: 0 $g-gutter
+  padding: 0 ($g-gutter / 2)
+  +respond-to($g-m)
+    padding: 0 $g-gutter
 
 // -------------------------------------
 //   Modifiers
