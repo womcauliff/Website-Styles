@@ -6,15 +6,21 @@
 // *************************************
 
 .navigation
-  left: 0
+  background: rgba($c-black, 0.95)
+  clear: both
+  height: $b-space-xl
+  left: ($g-gutter / 2)
   margin: 0 auto
   max-width: $b-maxWidth
+  overflow: hidden
   padding: 0 ($g-gutter / 2)
   position: fixed
-  right: 0
-  top: 0
+  right: ($g-gutter / 2)
+  top: ($g-gutter / 2)
+  transition: all 500ms $b-transition
   z-index: $z-nav
   +respond-to($g-m)
+    background: rgba($c-black, 0.9)
     padding: 0 $g-gutter
     &::before
       background-image: linear-gradient(rgba($c-black, 0.75) 0%, rgba($c-black, 0.1) 75%, rgba($c-black, 0))
@@ -30,7 +36,12 @@
 //   Modifiers
 // -------------------------------------
 
-// .structure--modifier
+.is-active
+  height: 100vh
+  left: 0
+  right: 0
+  padding: ($g-gutter / 2) $g-gutter
+  top: 0
 
 // -------------------------------------
 //   States
@@ -47,13 +58,6 @@
 // -------------------------------------
 //   Scaffolding
 // -------------------------------------
-
-// ----- Banner ----- //
-
-.navigation-banner
-  background: rgba($c-black, 0.9)
-  clear: both
-  overflow: hidden
 
 // ----- Primary ----- //
 

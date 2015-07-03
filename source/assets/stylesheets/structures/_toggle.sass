@@ -1,0 +1,58 @@
+// *************************************
+//
+//   Toggle
+//   -> Mobile navigation toggle
+//
+// *************************************
+
+.toggle,
+.toggle::after,
+.toggle::before
+  background: $c-white
+  border-radius: 100px
+  height: $toggle-height
+  transition: all 500ms $b-transition
+  width: $toggle-width
+
+.toggle
+  transform: translateY($toggle-spacing)
+
+.toggle::after,
+.toggle::before
+  content: ''
+  position: absolute
+
+.toggle::after
+  transform: translateY($toggle-spacing)
+
+.toggle::before
+  transform: translateY(-$toggle-spacing)
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+.toggle.is-close
+  background: rgba($c-white, 0)
+  &::after
+    top: 0
+    transform: rotate(45deg)
+  &::before
+    bottom: 0
+    transform: rotate(-45deg)
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-toggle
+  cursor: pointer
+  float: right
+  height: $toggle-height + ($toggle-spacing * 2)
+  margin: 0
+  position: relative
+  width: $toggle-width
+  +respond-to($g-s)
+    margin: 28px 0
+  +respond-to($g-m)
+    display: none
