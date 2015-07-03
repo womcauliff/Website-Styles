@@ -8,5 +8,6 @@
     = stylesheet_link_tag '//cloud.typography.com/6627932/702608/css/fonts.css'
     = stylesheet_link_tag 'application'
   %body{ class: page_classes }
+    = partial "shared/navigation"
     = yield
     = javascript_include_tag  'application'
