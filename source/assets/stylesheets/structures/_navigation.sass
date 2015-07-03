@@ -8,7 +8,7 @@
 .navigation
   background: rgba($c-black, 0.95)
   clear: both
-  height: $b-space-xl
+  height: $navigation-height
   left: ($g-gutter / 2)
   margin: 0 auto
   max-width: $b-maxWidth
@@ -37,7 +37,7 @@
 // -------------------------------------
 
 .is-active
-  height: 100vh
+  height: 100%
   left: 0
   right: 0
   padding: ($g-gutter / 2) $g-gutter
@@ -59,14 +59,45 @@
 //   Scaffolding
 // -------------------------------------
 
+// ----- Primary & Secondary ----- //
+
+.navigation-primary,
+.navigation-secondary
+  display: flex
+  flex-direction: column
+  height: calc(50vh - (#{$navigation-height * 2}))
+  justify-content: space-around
+  +respond-to($g-m)
+    float: right
+  a
+    border: none
+
 // ----- Primary ----- //
 
 .navigation-primary
-  +respond-to($g-m)
-    float: right
+  a
+    font-family: $b-fontFamily-heading
+    font-size: $b-fontSize-l
+    letter-spacing: $b-letterSpacing
+    text-transform: uppercase
+
+// ----- Search ----- //
+
+.navigation-search
+  background: transparent
+  border: none
+  border-bottom: $b-borderWidth $b-borderStyle lighten($c-black, 25%)
+  border-radius: 0
+  color: $c-white
+  font-size: $b-fontSize-l
+  margin-bottom: $b-space
+  padding: $b-space-s 0
+  &:focus
+    border-bottom-color: $c-accent
 
 // ----- Secondary ----- //
 
 .navigation-secondary
-  +respond-to($g-m)
-    float: right
+  a
+    color: $c-gray-1
+    font-size: $b-fontSize-s
