@@ -6,32 +6,47 @@
 // *************************************
 
 // -------------------------------------
-//   @font-face
-// -------------------------------------
-
-// ----- Open Sans ----- //
-
-// +font-face('OpenSans', 'OpenSans')
-// +font-face('OpenSans', 'OpenSansBold', bold)
-// +font-face('OpenSans', 'OpenSansItalic', normal, italic)
-
-// -------------------------------------
 //   Colors
 // -------------------------------------
 
-// ----- Palette ----- //
+// ----- Interface ----- //
 
-$accent: #2e89d4
+$c-accent: #2e89d4
+
+// ----- Brand ----- //
+
+$c-blue: #006f98
+$c-blue-darker: #005e7d
+$c-blue-ligher: #72adbd
+$c-brown: #5c4e41
+$c-green: #658942
+$c-navy: #2b3857
+$c-purple: #716081
+$c-red: #95382c
+$c-yellow: #e7a846
+
+// ----- Grayscale ----- //
+
+$c-black: #000000
+$c-gray-1: #f0f1f2
+$c-gray-2: #dfe3e5
+$c-gray-3: #97979c
+$c-gray-4: #6a6c76
+$c-white: #ffffff
 
 // ----- Base ----- //
 
-$c-background-invert: #444
-$c-background: #fff
-$c-border: $accent
-$c-highlight: $accent
-$c-subdue: lighten($accent, 25%)
-$c-text-invert: #fff
+// Normal
+
+$c-background: $c-black
+$c-border: $c-accent
+$c-subdue: lighten($c-accent, 25%)
 $c-text: #444
+
+// Inverted
+
+$c-background-invert: $c-white
+$c-text-invert: #fff
 
 // -------------------------------------
 //   Base
@@ -39,33 +54,60 @@ $c-text: #444
 
 // ----- Borders & Box Shadow ----- //
 
+// Borders
+
 $b-borderRadius: 4px
 $b-borderStyle: solid
 $b-borderWidth: 1px
 $b-border: $b-borderWidth $b-borderStyle $c-border
+
+// Box Shadow
+
 $b-boxShadow: 0 1px 4px rgba($c-text, 0.25)
 
 // ----- Typography ----- //
 
-$b-fontFamily-heading: 'Helvetica Neue', Helvetica, Arial, sans-serif
-$b-fontFamily: 'Helvetica Neue', Helvetica, Arial, sans-serif
-$b-fontSize: 16px
-$b-fontSize-xs: 60%
-$b-fontSize-s: 75%
-$b-fontSize-m: 90%
-$b-fontSize-l: 115%
-$b-fontSize-xl: 150%
+// Families
+
+$b-fontFamily-heading: 'Verlag A', 'Verlag B', Futura, 'Trebuchet MS', Arial, sans-serif
+$b-fontFamily: 'Sentinel SSm A', 'Sentinel SSm B', Georgia, 'Times New Roman', serif
+
+// Sizes
+
+$b-fontSize: 18px
+$b-fontSize-mobile: 14px
+$b-fontSize-xxs: 0.725rem
+$b-fontSize-xs: 0.75rem
+$b-fontSize-s: 0.875rem
+$b-fontSize-l: 1.333rem
+$b-fontSize-xl: 1.75rem
+$b-fontSize-xxl: 3.333rem
+
+// Weights
+
+$b-fontWeight: 400
+$b-fontWeight-bold: 700
+$b-fontWeight-heading: 700
+
+// Miscellaneous
+
+$b-letterSpacing: 0.125rem
 $b-lineHeight: 1.5
 
 // ----- Sizing ----- //
 
-$b-maxWidth: em(1024px)
-$b-maxWidth-s: em(700px)
-$b-space: em(20px)
+// Max Widths
+
+$b-maxWidth: 1240px
+$b-maxWidth-s: 675px
+
+// Spaces
+
+$b-space: 18px
 $b-space-xs: $b-space * 0.25
 $b-space-s: $b-space * 0.5
 $b-space-l: $b-space * 2
-$b-space-xl: $b-space * 4
+$b-space-xl: $b-space * 3
 
 // -------------------------------------
 //   Components
@@ -75,15 +117,15 @@ $b-space-xl: $b-space * 4
 
 // Breakpoints
 
-$g-s: em(480px)
-$g-m: em(800px)
-$g-l: em(1024px)
+$g-s: 480px
+$g-m: 800px
+$g-l: 1024px
 
 // Settings
 
 $g-columns: 12
 $g-defaults: 's' $g-s, 'm' $g-m, 'l' $g-l
-$g-gutter: 20px
+$g-gutter: 40px
 $g-silent: false
 
 // Selector

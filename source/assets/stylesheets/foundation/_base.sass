@@ -9,8 +9,11 @@ html
   background: $c-background
   color: $c-text
   font-family: $b-fontFamily
-  font-size: $b-fontSize
+  font-size: $b-fontSize-mobile
+  font-weight: $b-fontWeight
   line-height: $b-lineHeight
+  +respond-to($g-m)
+    font-size: $b-fontSize
 
 body
   font-size: 100%
@@ -34,22 +37,24 @@ h2, .h2,
 h3, .h3,
 h4, .h4
   font-family: $b-fontFamily-heading
-  font-weight: bold
+  font-weight: $b-fontWeight-heading
+  letter-spacing: $b-letterSpacing
   line-height: 1.2
   margin-bottom: $b-space-xs
   margin-top: 0
+  text-transform: uppercase
 
 h1, .h1
-  font-size: 200%
+  font-size: $b-fontSize-xxl
 
 h2, .h2
-  font-size: 150%
+  font-size: $b-fontSize-xl
 
 h3, .h3
-  font-size: 125%
+  font-size: $b-fontSize-l
 
 h4, .h4
-  font-size: 110%
+  font-size: $b-fontSize
 
 // -------------------------------------
 //   Inline Content
@@ -59,11 +64,11 @@ h4, .h4
 
 a
   border-bottom: $b-border
-  color: $c-highlight
+  color: $c-accent
   text-decoration: none
   &:hover,
   &:focus
-    color: lighten($c-highlight, 5%)
+    color: lighten($c-accent, 5%)
 
 // ----- Images ----- //
 
