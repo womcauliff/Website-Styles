@@ -21,11 +21,12 @@
   z-index: $z-nav
   +respond-to($g-m)
     background: rgba($c-black, 0.9)
+    overflow: visible
     padding: 0 $g-gutter
     &::before
       background-image: linear-gradient(rgba($c-black, 0.75) 0%, rgba($c-black, 0.1) 75%, rgba($c-black, 0))
       content: ''
-      height: $b-space * 10
+      height: $b-space * 7
       left: 0
       position: fixed
       right: 0
@@ -69,8 +70,6 @@
   justify-content: space-around
   +respond-to($g-m)
     float: right
-  a
-    border: none
 
 // ----- Primary ----- //
 
