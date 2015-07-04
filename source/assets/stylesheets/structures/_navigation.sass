@@ -43,8 +43,11 @@
   right: 0
   padding: ($g-gutter / 2) $g-gutter
   top: 0
+  .navigation-group
+    visibility: visible
   .navigation-primary,
   .navigation-secondary
+    visibility: visible
     a
       opacity: 1
       transform: translateY(0%)
@@ -55,13 +58,15 @@
     opacity: 1
     transform: translateY(0%)
     transition-delay: 150ms
+    visibility: visible
   .navigation-secondary
     a
       transition-delay: 450ms
-  .social.social--navigation
+  .social--navigation
     opacity: 1
     transform: translateY(0%)
     transition-delay: 600ms
+    visibility: visible
 
 // -------------------------------------
 //   States
@@ -79,10 +84,21 @@
 //   Scaffolding
 // -------------------------------------
 
+// ----- Group ----- //
+
+.navigation-group
+  left: $g-gutter
+  position: fixed
+  right: $g-gutter
+  top: 50%
+  transform: translateY(-45%)
+  visibility: hidden
+
 // ----- Primary & Secondary ----- //
 
 .navigation-primary,
 .navigation-secondary
+  visibility: hidden
   +respond-to($g-m)
     float: right
   +respond-to($navigation-vertical-s, max-height)
@@ -123,6 +139,7 @@
   padding: $b-space-s 0
   transform: translateY(100%)
   transition: all 500ms $b-transition
+  visibility: hidden
   +respond-to($navigation-vertical, max-height)
     margin-bottom: $b-space
   &::placeholder
@@ -140,12 +157,3 @@
   a
     color: $c-gray-1
     font-size: ($b-fontSize * 0.8)
-
-// ----- Group ----- //
-
-.navigation-group
-  left: $g-gutter
-  position: fixed
-  right: $g-gutter
-  top: 50%
-  transform: translateY(-45%)
