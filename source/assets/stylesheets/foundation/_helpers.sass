@@ -38,20 +38,30 @@
     @content
 
 // -------------------------------------
-//   Extends
+//   Utilities
 // -------------------------------------
-
-// ----- Clearfix ----- //
-
-.group::after
-  clear: both
-  content: ''
-  display: table
 
 // ----- Ellipsis ----- //
 
-.ellipsis
+=ellipsis
   overflow: hidden
   text-overflow: ellipsis
   white-space: nowrap
+
+// ----- Clearfix ----- //
+
+=group
+  &::after
+    clear: both
+    content: ''
+    display: table
+
+// ----- Stretch ----- //
+
+=stretch
+  bottom: 0
+  left: 0
+  position: absolute
+  right: 0
+  top: 0
 
