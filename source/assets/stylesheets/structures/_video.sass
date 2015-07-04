@@ -1,15 +1,25 @@
 // *************************************
 //
-//   Hero
-//   -> Page hero headings
+//   Video
+//   -> Video bugs
 //
 // *************************************
 
-.hero
-  background: none
-  padding: 50vh ($g-gutter / 2) $b-space
-  +respond-to($g-m)
-    padding: 70vh $g-gutter $b-space
+.video
+  background: rgba($c-accent, 0.85)
+  box-shadow: $b-boxShadow
+  color: $c-white
+  display: block
+  font-size: $b-fontSize-xxs
+  margin-bottom: $b-space-xl
+  margin-top: $b-space-l
+  max-width: 500px
+  padding: $b-space 0 $b-space 155px
+  position: relative
+  &:hover,
+  &:focus
+    color: $c-white
+    opacity: 0.85
 
 // -------------------------------------
 //   Modifiers
@@ -33,4 +43,11 @@
 //   Scaffolding
 // -------------------------------------
 
-// .structure-scaffolding
+.video-thumbnail
+  +stretch
+  background: $c-black
+  overflow: hidden
+  width: 130px
+  img
+    height: auto
+    width: 100%

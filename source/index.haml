@@ -2,14 +2,15 @@
   .cell
     %h1.tci A Church Distributed
     = link_to "#", class: "video" do
-      = image_tag 'hero-home.jpg', class: "video-thumbnail"
-      %h2.h4 What the Film
-      %p You're invited to <em>be</em> the church.
+      .video-thumbnail
+        = image_tag 'hero-home.jpg'
+      %h2.tsxs Watch the Film
+      %p.mbf You're invited to <em>be</em> the church.
     .g
       - 4.times do
-        .g-b.g-b--s--1of2.g-b--m--1of4
+        .g-b.g-b--s--1of2.g-b--m--1of4.mbm
           = link_to "#", class: "db tci" do
-            %h3.h4.tsxxs Locations &amp; Services
+            %h3.h4.tsxs Locations &amp; Services
             %p.tsxxs
               Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
 
