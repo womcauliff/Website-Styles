@@ -17,7 +17,7 @@
   position: fixed
   right: ($g-gutter / 2)
   top: ($g-gutter / 2)
-  transition: all 500ms $b-transition
+  transition: all 1s $b-transition, height 700ms $b-transition
   z-index: $z-nav
   +respond-to($g-m)
     background: rgba($c-black, 0.9)
@@ -43,6 +43,25 @@
   right: 0
   padding: ($g-gutter / 2) $g-gutter
   top: 0
+  .navigation-primary,
+  .navigation-secondary
+    a
+      opacity: 1
+      transform: translateY(0%)
+  .navigation-primary
+    a
+      transition-delay: 300ms
+  .navigation-search
+    opacity: 1
+    transform: translateY(0%)
+    transition-delay: 150ms
+  .navigation-secondary
+    a
+      transition-delay: 450ms
+  .social.social--navigation
+    opacity: 1
+    transform: translateY(0%)
+    transition-delay: 600ms
 
 // -------------------------------------
 //   States
@@ -64,21 +83,31 @@
 
 .navigation-primary,
 .navigation-secondary
-  position: fixed
   +respond-to($g-m)
     float: right
+  +respond-to($navigation-vertical-s, max-height)
+    float: left
+    margin-right: 10%
+    width: 40%
   a
     display: block
+    opacity: 0
+    padding: $b-space-s 0
+    transform: translateY(100%)
+    transition: all 500ms $b-transition
+    +respond-to($navigation-vertical, max-height)
+      padding: $b-space-xs 0
 
 // ----- Primary ----- //
 
 .navigation-primary
-  top: 25%
   a
     font-family: $b-fontFamily-heading
-    font-size: $b-fontSize-l
+    font-size: $b-fontSize-xl
     letter-spacing: $b-letterSpacing
     text-transform: uppercase
+    +respond-to($navigation-vertical-s, max-height)
+      font-size: $b-fontSize-l
 
 // ----- Search ----- //
 
@@ -89,14 +118,34 @@
   border-radius: 0
   color: $c-white
   font-size: $b-fontSize-l
+  margin-bottom: ($b-space-l * 0.75)
+  opacity: 0
   padding: $b-space-s 0
+  transform: translateY(100%)
+  transition: all 500ms $b-transition
+  +respond-to($navigation-vertical, max-height)
+    margin-bottom: $b-space
+  &::placeholder
+    color: $c-gray-4
+    font-style: italic
   &:focus
     border-bottom-color: $c-accent
 
 // ----- Secondary ----- //
 
 .navigation-secondary
-  top: 50%
+  margin-top: $b-space-s
+  +respond-to($navigation-vertical-s, max-height)
+    margin-top: 0
   a
     color: $c-gray-1
-    font-size: $b-fontSize-s
+    font-size: ($b-fontSize * 0.8)
+
+// ----- Group ----- //
+
+.navigation-group
+  left: $g-gutter
+  position: fixed
+  right: $g-gutter
+  top: 50%
+  transform: translateY(-45%)

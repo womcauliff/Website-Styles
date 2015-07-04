@@ -1,8 +1,8 @@
-.hero{style: "background-image: url(http://lorempixel.com/1280/720/abstract)"}
+.hero{style: "background-image: url(#{image_path 'hero-home.jpg'})"}
   .cell
     %h1.tci A Church Distributed
     = link_to "#", class: "" do
-      = image_tag "http://lorempixel.com/800/600/abstract"
+      = image_tag 'hero-home.jpg'
       %h2.h4 What the Film
       %p You're invited to <em>be</em> the church.
     .g

@@ -12,8 +12,13 @@
 // -------------------------------------
 
 .social--navigation
-  bottom: $g-gutter
-  position: fixed
+  clear: both
+  padding-top: ($b-space-l * 0.75)
+  opacity: 0
+  transform: translateY(100%)
+  transition: all 500ms $b-transition
+  +respond-to($navigation-vertical, max-height)
+    padding-top: $b-space
 
 // -------------------------------------
 //   States

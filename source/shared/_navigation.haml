@@ -1,20 +1,21 @@
-%nav.navigation.is-active
+%nav.navigation
   .logo
     = link_to "Northland", "index.html", class: "logo-primary"
     = link_to "A Church Distributed", "#", class: "logo-secondary"
   .has-toggle
-    .toggle.is-close
-  %input.navigation-search{type: "text", placeholder: "Search..."}
-  .navigation-primary
-    = link_to "Connect", "connect.haml"
-    = link_to "Resources", "resources.html"
-    = link_to "About", "about.html"
-  .navigation-secondary
-    = link_to "Calendar", "calendar.html"
-    = link_to "Ministries", "ministries.html"
-    = link_to "Need Help?", "need-help.html"
-    = link_to "Tithe", "tithe.html"
-  .social.social--navigation
-    = link_to "Twitter", "https://twitter.com/northlandchurch"
-    = link_to "Facebook", "https://www.facebook.com/northlandchurch"
-    = link_to "YouTube", "https://www.youtube.com/user/NorthlandChurch"
+    .toggle
+  .navigation-group
+    %input.navigation-search{type: "text", placeholder: "Search..."}
+    .navigation-primary
+      = link_to "Connect", "connect.haml"
+      = link_to "Resources", "resources.html"
+      = link_to "About", "about.html"
+    .navigation-secondary
+      = link_to "Calendar", "calendar.html"
+      = link_to "Ministries", "ministries.html"
+      = link_to "Need Help?", "need-help.html"
+      = link_to "Tithe", "tithe.html"
+    .social.social--navigation
+      = link_to "Twitter", "https://twitter.com/northlandchurch"
+      = link_to "Facebook", "https://www.facebook.com/northlandchurch"
+      = link_to "YouTube", "https://www.youtube.com/user/NorthlandChurch"
