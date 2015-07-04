@@ -21,8 +21,11 @@
   z-index: $z-nav
   +respond-to($g-m)
     background: rgba($c-black, 0.9)
+    left: $g-gutter
     overflow: visible
     padding: 0 $g-gutter
+    right: $g-gutter
+    top: $g-gutter
     &::before
       background-image: linear-gradient(rgba($c-black, 0.75) 0%, rgba($c-black, 0.1) 75%, rgba($c-black, 0))
       content: ''
@@ -34,7 +37,7 @@
       z-index: $z-nav-backdrop
 
 // -------------------------------------
-//   Modifiers
+//   States
 // -------------------------------------
 
 .is-active
@@ -69,18 +72,6 @@
     visibility: visible
 
 // -------------------------------------
-//   States
-// -------------------------------------
-
-// .structure.is-state
-
-// -------------------------------------
-//   Context
-// -------------------------------------
-
-// .has-structure
-
-// -------------------------------------
 //   Scaffolding
 // -------------------------------------
 
@@ -93,6 +84,14 @@
   top: 50%
   transform: translateY(-45%)
   visibility: hidden
+  +respond-to($g-m)
+    left: 0
+    position: absolute
+    right: 0
+    top: 0
+    transform: translateY(0%)
+    visibility: visible
+
 
 // ----- Primary & Secondary ----- //
 
@@ -101,6 +100,7 @@
   visibility: hidden
   +respond-to($g-m)
     float: right
+    visibility: visible
   +respond-to($navigation-vertical-s, max-height)
     float: left
     margin-right: 10%
@@ -111,6 +111,10 @@
     padding: $b-space-s 0
     transform: translateY(100%)
     transition: all 500ms $b-transition
+    +respond-to($g-m)
+      display: inline-block
+      opacity: 1
+      transform: translateY(0%)
     +respond-to($navigation-vertical, max-height)
       padding: $b-space-xs 0
 
@@ -122,6 +126,8 @@
     font-size: $b-fontSize-xl
     letter-spacing: $b-letterSpacing
     text-transform: uppercase
+    +respond-to($g-m)
+      font-size: $b-fontSize-s
     +respond-to($navigation-vertical-s, max-height)
       font-size: $b-fontSize-l
 
@@ -140,6 +146,8 @@
   transform: translateY(100%)
   transition: all 500ms $b-transition
   visibility: hidden
+  +respond-to($g-m)
+    display: none
   +respond-to($navigation-vertical, max-height)
     margin-bottom: $b-space
   &::placeholder
@@ -152,6 +160,10 @@
 
 .navigation-secondary
   margin-top: $b-space-s
+  +respond-to($g-m)
+    position: absolute
+    right: 0
+    top: -55%
   +respond-to($navigation-vertical-s, max-height)
     margin-top: 0
   a
