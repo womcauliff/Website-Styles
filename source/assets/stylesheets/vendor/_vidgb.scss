@@ -1,0 +1,49 @@
+/* *************************************
+//
+//   VidBG
+//   -> https://github.com/daniellmb/VidBG
+//
+// ************************************/
+
+.vidbg {
+  background: url(image_path 'hero-home.jpg') no-repeat;
+  background-size: cover;
+  bottom: 0;
+  display: block;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: auto;
+  z-index: -101;
+}
+
+.vidbg video {
+  display: none;
+  @include respond-to($g-s) {
+    bottom: 0;
+    display: block;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    width: auto;
+    z-index: -100;
+  }
+}
+
+.vidbg .vidbg-overlay {
+  background: rgba($c-black, 0.15);
+  bottom: 0;
+  display: block;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  right: 0;
+  width: auto;
+  z-index: -99;
+}

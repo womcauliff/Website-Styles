@@ -38,6 +38,11 @@
   margin: 0
   padding: 1em 0
   position: relative
+  +respond-to($g-m)
+    height: $navigation-height
+    line-height: $navigation-height
+    position: relative
+    z-index: $z-logo
 
 .logo-primary
   color: $c-white
@@ -49,5 +54,11 @@
 
 .logo-secondary
   bottom: 1px
+  color: lighten($c-accent, 5%)
   font-size: ($b-fontSize-xs * 0.85)
   text-decoration: underline
+  +respond-to($g-m)
+    font-size: $b-fontSize-xs
+  &:hover,
+  &:focus
+    color: lighten($c-accent, 10%)

@@ -28,7 +28,7 @@
     right: $g-gutter
     top: ($b-space * 1.75)
     &::before
-      background-image: linear-gradient(rgba($c-black, 0.3) 0%, rgba($c-black, 0.1) 75%, rgba($c-black, 0))
+      background-image: linear-gradient(rgba($c-black, 0.5) 0%, rgba($c-black, 0.1) 75%, rgba($c-black, 0))
       content: ''
       height: $b-space * 7
       left: 0
@@ -128,7 +128,15 @@
     letter-spacing: $b-letterSpacing
     text-transform: uppercase
     +respond-to($g-m)
-      font-size: $b-fontSize-s
+      color: $c-white
+      font-size: $b-fontSize-xs
+      height: $navigation-height
+      line-height: $navigation-height
+      margin-left: $b-space-l
+      padding: 0
+      &:hover,
+      &:focus
+        color: lighten($c-accent, 5%)
     +respond-to($navigation-vertical-s, max-height)
       font-size: $b-fontSize-l
 
@@ -162,11 +170,20 @@
 .navigation-secondary
   margin-top: $b-space-s
   +respond-to($g-m)
+    margin-top: 0
     position: absolute
     right: 0
-    top: -55%
+    top: (-$b-space * 1.75)
   +respond-to($navigation-vertical-s, max-height)
     margin-top: 0
   a
     color: $c-gray-1
     font-size: ($b-fontSize * 0.8)
+    +respond-to($g-m)
+      font-size: $b-fontSize-xxs
+      font-style: italic
+      margin-left: ($b-space-l * 0.75)
+      padding: 0
+    &:hover,
+    &:focus
+      color: rgba($c-white, 0.5)
