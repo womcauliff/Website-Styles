@@ -1,18 +1,20 @@
 .hero
-  .cell
-    %h1.tci A Church Distributed
-    = link_to "#", class: "video" do
-      .video-thumbnail
-        = image_tag 'hero-home.jpg'
-      %h2.tsxs Watch the Film
-      %p.mbf You're invited to <em>be</em> the church.
-    .g
-      - 4.times do
-        .g-b.g-b--s--1of2.g-b--m--1of4.mbm
-          = link_to "#", class: "db tci" do
-            %h3.h4.tsxs Locations &amp; Services
-            %p.tsxxs
-              Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+  .hero-content
+    .cell
+      %h1.tci A Church Distributed
+      = link_to "#", class: "video" do
+        .video-thumbnail
+          = image_tag 'hero-home.jpg'
+        %h2.tsxs Watch the Film
+        %p.mbf You're invited to <em>be</em> the church.
+  .hero-extend
+    .cell
+      .g
+        - 4.times do
+          .g-b.g-b--s--1of2.g-b--m--1of4.mbm
+            = link_to "#", class: "db tci" do
+              %h3.h4.tss Locations &amp; Services
+              %p.tsxxs Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Curabitur blandit tempus porttitor.
 
 .row.row--inverted
   .cell
