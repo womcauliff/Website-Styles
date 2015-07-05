@@ -5,7 +5,9 @@
   .has-toggle
     .toggle
   .navigation-group
-    %input.navigation-search{type: "text", placeholder: "Search..."}
+    .navigation-search
+      %i.material-icons#navigation-searchOpen search
+      %input#search{type: "text", placeholder: "Search..."}
     .navigation-primary
       = link_to "Connect", "connect.haml"
       = link_to "Resources", "resources.html"

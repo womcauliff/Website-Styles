@@ -9,6 +9,18 @@ $(function() {
     $('.navigation').toggleClass('is-active');
   });
 
+  $('.navigation-search, #navigation-searchOpen').on('click', function() {
+    $('.navigation-search').addClass("is-searching");
+  });
+  $('#navigation-searchClose').on('click', function() {
+    $('.navigation-search').removeClass("is-searching");
+  });
+  $(window).on('keyup', function(e) {
+    if (e.keyCode == 27) {
+      $('.navigation-search').removeClass('is-searching');
+    }
+  });
+
 });
 
 // --------------------------------------
