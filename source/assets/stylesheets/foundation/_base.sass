@@ -49,7 +49,15 @@ h4, .h4
   text-transform: uppercase
 
 h1, .h1
-  font-size: $b-fontSize-xxl
+  font-size: $b-fontSize-xxl * 0.85
+  +respond-to($g-m)
+    font-size: $b-fontSize-xxl
+  em
+    font-family: $b-fontFamily
+    font-size: $b-fontSize-xxl * 1.5
+    font-weight: $b-fontWeight
+    letter-spacing: 0
+    text-transform: initial
 
 h2, .h2
   font-size: $b-fontSize-xl

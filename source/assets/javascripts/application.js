@@ -28,11 +28,10 @@ $(function() {
 //  -> References vendor.js
 // --------------------------------------
 
-var homepage = document.getElementsByClassName("index")[0];
-vidbg(homepage, [
+var all = document.getElementsByTagName("body")[0];
+vidbg(all, [
   {
     src: 'assets/videos/placeholder.mp4',
     type: 'mp4'
   }
 ], true);
-console.log(homepage);
