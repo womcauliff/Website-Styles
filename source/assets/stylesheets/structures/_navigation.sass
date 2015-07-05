@@ -6,36 +6,43 @@
 // *************************************
 
 .navigation
-  background: rgba($c-black, 0.95)
+  background: rgba($c-black, 0.9)
   clear: both
   height: $navigation-height-mobile
   left: ($g-gutter / 2)
   margin: 0 auto
   max-width: $b-maxWidth
-  overflow: hidden
   padding: 0 ($g-gutter / 2)
   position: fixed
   right: ($g-gutter / 2)
   top: ($g-gutter / 2)
   transition: all 1s $b-transition, height 700ms $b-transition
   z-index: $z-nav
+  &::before
+    background: rgba($c-black, 0.9)
+    bottom: 0
+    content: ''
+    left: 0
+    opacity: 0
+    position: fixed
+    right: 0
+    top: 0
+    transition: opacity 700ms $b-transition
+    visibility: hidden
+    z-index: $z-nav-backdrop
   +respond-to($g-m)
     background: rgba($c-black, 0.85)
     height: $navigation-height
     left: $g-gutter
-    overflow: visible
     padding: 0 $g-gutter
     right: $g-gutter
     top: ($b-space * 1.75)
     &::before
+      background: none
       background-image: linear-gradient(rgba($c-black, 0.5) 0%, rgba($c-black, 0.1) 75%, rgba($c-black, 0))
-      content: ''
+      bottom: auto
       height: $b-space * 7
-      left: 0
-      position: fixed
-      right: 0
-      top: 0
-      z-index: $z-nav-backdrop
+      visibility: visible
 
 // -------------------------------------
 //   States
@@ -47,6 +54,9 @@
   right: 0
   padding: ($g-gutter / 2) $g-gutter
   top: 0
+  &::before 
+    opacity: 1
+    visibility: visible
   .navigation-group
     visibility: visible
   .navigation-primary,
