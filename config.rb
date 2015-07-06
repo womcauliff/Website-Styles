@@ -5,6 +5,7 @@
 # ----- Middleman ----- #
 
 activate :livereload
+set :relative_links, true
 
 # ----- Assets ----- #
 
