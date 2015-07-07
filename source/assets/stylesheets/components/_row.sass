@@ -21,6 +21,17 @@
 .row--gray
   background: $c-gray-1
 
+// ----- Image ----- //
+
+.row--image
+  background-position: center
+  background-size: cover
+  position: relative
+  &::before
+    +stretch
+    background: rgba($c-black, 0.25)
+    content: ''
+
 // ----- Theme ----- //
 
 .row--inverted
