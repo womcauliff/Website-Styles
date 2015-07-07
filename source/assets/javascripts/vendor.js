@@ -8,7 +8,7 @@
  * @author Daniel Lamb <dlamb.open.source@gmail.com>
  */
 
-function vidbg(element, sources, overlay) {
+function vidbg(element, sources) {
   var container, item, html = [], index = sources.length;
   if (!document.createElement('video').canPlayType) {
     return;
@@ -20,9 +20,6 @@ function vidbg(element, sources, overlay) {
     html.push('<source src="', item.src, '" type="video/', item.type, '" />');
   }
   html.push('</video>');
-  if (overlay) {
-    html.push('<div class="vidbg-overlay"></div>');
-  }
   container = document.createElement('div');
   container.setAttribute('class', 'vidbg');
   container.innerHTML = html.join('');

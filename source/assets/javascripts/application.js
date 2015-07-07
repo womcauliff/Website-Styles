@@ -28,8 +28,8 @@ $(function() {
 //  -> References vendor.js
 // --------------------------------------
 
-var all = document.getElementsByTagName("body")[0];
-vidbg(all, [
+var home = document.getElementById("hero-home");
+vidbg(home, [
   {
     src: 'assets/videos/placeholder.mp4',
     type: 'mp4'

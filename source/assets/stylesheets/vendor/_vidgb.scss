@@ -16,7 +16,7 @@
   position: fixed;
   right: 0;
   top: 0;
-  z-index: -1001;
+  z-index: $z-vidbg - 2;
 }
 
 .vidbg video {
@@ -30,7 +30,7 @@
     position: fixed;
     right: 0;
     width: auto;
-    z-index: -1000;
+    z-index: $z-vidbg - 1;
   }
 }
 
@@ -44,5 +44,5 @@
   position: absolute;
   right: 0;
   width: auto;
-  z-index: -999;
+  z-index: $z-vidbg;
 }
