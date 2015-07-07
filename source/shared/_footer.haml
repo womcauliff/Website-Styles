@@ -1,0 +1,39 @@
+.row
+  .cell.well
+    .g
+      .g-b.g-b--m--1of3
+        %hr.rule.rule--transparent
+        .logo
+          = link_to "Northland", "index.html", class: "logo-primary"
+          = link_to "A Church Distributed", "#", class: "logo-secondary"
+      .g-b.g-b--m--1of3
+        %hr.rule.rule--transparent.mbl
+        .g
+          %ul.g-b.g-b--1of2
+            %li= link_to "Connect", "#"
+            %li= link_to "Resources", "#"
+            %li= link_to "About", "#"
+            %li= link_to "Another Link", "#"
+            %li= link_to "But Not", "#"
+            %li= link_to "Too Many", "#"
+          %ul.g-b.g-b--1of2
+            %li= link_to "Calendar", "#"
+            %li= link_to "Ministries", "#"
+            %li= link_to "Need Help?", "#"
+            %li= link_to "Tithe", "#"
+            %li= link_to "Contact", "#"
+      .g-b.g-b--m--1of3
+        %hr.rule.rule--transparent.mbl
+        %h3.tci.tss Newsletters
+        %p.tco.tsxs Northland offers several newsletters that deliver the content you care about directly to your inbox. Select which newsletters you would like to receive, and enter your email address to sign up!
+        %form{action: "#"}
+          %input#events{type: "checkbox"}
+          %label{for: "events"} Events Newsletter
+          %input#resources{type: "checkbox"}
+          %label{for: "resources"} Resources Newsletter
+          %input#email{type: "email", placeholder: "Enter your email address..."}
+          %input.btn{type: "submit", value: "Sign Up"}
+
+    %hr.rule.rule--transparent.mbl.mtxl
+    %p.tsxxs &copy; 2015 Northland, A Church Distributed.
+
