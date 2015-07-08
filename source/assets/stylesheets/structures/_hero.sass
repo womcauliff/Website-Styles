@@ -24,8 +24,10 @@
 
 .hero--secondary
   .hero-content
-    padding: 40vh ($g-gutter / 2) 25vh
-    text-align: center
+    padding: 30vh ($g-gutter / 2) $b-space
+    +respond-to($g-m)
+      padding: 38vh ($g-gutter / 2) 25vh
+      text-align: center
 
 // -------------------------------------
 //   States
@@ -62,7 +64,7 @@
   background-image: url(image-path('hero-home.jpg'))
   background-position: center
   background-size: cover
-  opacity: 0.75
+  opacity: 0.6
   position: fixed
   z-index: $z-hero-media
 
