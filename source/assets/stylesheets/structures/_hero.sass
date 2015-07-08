@@ -32,6 +32,8 @@
     background-image: linear-gradient(rgba($c-black, 0) 0%, rgba($c-black, 0.75) 50%, $c-black 100%)
     +respond-to($g-m)
       background-image: linear-gradient(rgba($c-black, 0) 0%, $c-black 100%)
+  .hero-media
+    opacity: 0.6
 
 // ----- Secondary ----- //
 
@@ -59,9 +61,12 @@
 // -------------------------------------
 
 .hero-content
+  color: $c-white
   display: block
   position: relative
   z-index: $z-hero-content
+  h1
+    text-shadow: $b-textShadow
 
 .hero-extend
   background-image: linear-gradient(rgba($c-black, 0) 0%, rgba($c-black, 0.75) 50%, rgba($c-black, 0.9) 100%)
@@ -78,7 +83,7 @@
   background-image: url(image-path('hero-home.jpg'))
   background-position: center
   background-size: cover
-  opacity: 0.6
+  opacity: 0.85
   position: fixed
   z-index: $z-hero-media
 
