@@ -12,7 +12,20 @@
 //   Modifiers
 // -------------------------------------
 
-// .structure--modifier
+// ----- Primary ----- //
+
+.hero--primary
+  .hero-content
+    padding: 50vh ($g-gutter / 2) $b-space
+    +respond-to($g-m)
+      padding: 70vh $g-gutter $b-space
+
+// ----- Secondary ----- //
+
+.hero--secondary
+  .hero-content
+    padding: 40vh ($g-gutter / 2) 25vh
+    text-align: center
 
 // -------------------------------------
 //   States
@@ -31,11 +44,8 @@
 // -------------------------------------
 
 .hero-content
-  padding: 50vh ($g-gutter / 2) $b-space
   position: relative
   z-index: $z-hero-content
-  +respond-to($g-m)
-    padding: 70vh $g-gutter $b-space
 
 .hero-extend
   background-image: linear-gradient(rgba($c-black, 0) 0%, rgba($c-black, 0.75) 50%, rgba($c-black, 0.9) 100%)
@@ -52,7 +62,7 @@
   background-image: url(image-path('hero-home.jpg'))
   background-position: center
   background-size: cover
-  opacity: 0.85
+  opacity: 0.75
   position: fixed
   z-index: $z-hero-media
 
