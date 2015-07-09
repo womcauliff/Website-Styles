@@ -1,0 +1,31 @@
+// *************************************
+//
+//   Heading
+//   -> Bespoke h1, h2, h3, h4
+//
+// *************************************
+
+.heading
+  font-family: $b-fontFamily-heading
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// ----- Sizes ----- //
+
+.heading--s
+  font-size: $b-fontSize-s
+.heading--l
+  font-size: $b-fontSize-xl
+  +respond-to($g-m)
+    font-size: ($b-fontSize-xl * 1.5)
+
+// ----- Styles ----- //
+
+.heading--italic
+  font-family: $b-fontFamily
+  font-style: italic
+  font-weight: $b-fontWeight
+  letter-spacing: 0
+  text-transform: initial
