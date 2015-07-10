@@ -18,20 +18,19 @@
               %p.deck-description Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.
       %hr.rule.rule--transparent.mbl
       .tsxs
-        %span.tco Filter by type:
-        = link_to "Video", "#", class: "mlm tci"
-        = link_to "Blogs", "#", class: "mlm tci"
-        = link_to "Ask a Pastor", "#", class: "mlm tci"
-        = link_to "Liturgy", "#", class: "mlm tci"
-        = link_to "Prayers", "#", class: "mlm tci"
-        = link_to "Stories", "#", class: "mlm tci"
+        %span.mrm.tco Filter by type:
+        = link_to "Video", "#", class: "mrm tci"
+        = link_to "Blogs", "#", class: "mrm tci"
+        = link_to "Ask a Pastor", "#", class: "mrm tci"
+        = link_to "Liturgy", "#", class: "mrm tci"
+        = link_to "Prayers", "#", class: "mrm tci"
+        = link_to "Stories", "#", class: "mrm tci"
 
 .row
   .cell.well
-    .g
+    .has-editorials
       - 3.times do
-        .g-b.g-b--m--1of3
-          = image_tag lorem.image('600x350'), class: "mbl"
-      - 8.times do
-        .g-b.g-b--1of2.g-b--m--1of4
-          = image_tag lorem.image('600x350'), class: "mbl"
+        = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
+          .editorial-title
+            %h2 Miracles
+            %p How faith can survive miracle-less moments.

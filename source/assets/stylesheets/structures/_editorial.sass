@@ -1,0 +1,44 @@
+// *************************************
+//
+//   Editorial
+//   -> Magazine-style feed
+//
+// *************************************
+
+.editorial
+  background: lighten($c-black, 10%)
+  background-position: center
+  background-size: cover
+  display: block
+  position: relative
+  &::before
+    +stretch
+    background: rgba($c-black, 0.2)
+    content: ''
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.has-editorials
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+// .structure-scaffolding
