@@ -2,7 +2,7 @@
   .hero-media#hero-home{style: "background-image: url(#{image_path 'hero-home.jpg'})"}
   .hero-content
     .cell
-      %h1 A Church Distributed
+      %h1.heading.heading--xl A Church Distributed
       = link_to "#", class: "video" do
         .video-thumbnail
           = image_tag 'hero-home.jpg'
@@ -23,7 +23,7 @@
       - 4.times do
         .deck.g-b.g-b--s--1of2.g-b--m--1of4
           = link_to "#", class: "db" do
-            = image_tag lorem.image('600x350'), class: "mbm"
+            .media.media--deck{style: "background-image: url(#{lorem.image('600x350')})"}
             %h3.deck-title Summer Internship
             %p.deck-description The youth of northland are on a mission to build a stronger, better community.
 
@@ -34,10 +34,10 @@
       "Thy kingdom come, Thy will be done on earth as it is in heaven."
       %cite &ndash; Jesus
     %hr.rule.rule--story
-    %h1
+    %h1.heading
       Do you know the
       %br
-      %em.tca so that
+      %em so that
       %br
       of your life?
     %hr.rule.rule--story
@@ -47,7 +47,11 @@
 
 .row.row--image{style: "background-image: url(https://download.unsplash.com/photo-1413834932717-29e7d4714192)"}
   .cell.cell--s.well.well--xl.tac
-    %h1.tci God <em>so</em> loved the world <em>that</em>...
+    %h1.heading
+      God
+      %em so
+      loved the world
+      %em that...
     = link_to "#", class: "video mhc tal" do
       .video-thumbnail
         = image_tag 'hero-home.jpg'
@@ -56,9 +60,9 @@
 
 .row.row--inverted
   .cell.cell--s.well.well--l.tac
-    %h1
+    %h1.heading
       You have been given
-      %em.tca so that...
+      %em so that...
     %hr.rule.rule--story
     %p We believe God has uniquely created you &ndash; with specific gifts for specific purposes. You abilities, the way you think, even the things you struggle with, all point toward God's design and deliberate plan.
     %p We want to help you discover why God created you for such a time as this. And we want to help you offer your unique gifts and talents to God and to others in a way you may never have imagined was possible.
@@ -66,10 +70,10 @@
 
 .row.row--gray
   .cell.cell--s.well.well--l.tac
-    %h1
+    %h1.heading
       You are here
       %br
-      %em.tca so that...
+      %em so that...
     %hr.rule.rule--story
     %p Not only has God given you specific gifts, but God also has strategically given you a context and a community where you can express those gifts. The web of relationships you already have; the neighborhood where you already live; the place where you already work &ndash; these are the people among whom God providentially has placed you.
     %blockquote

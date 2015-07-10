@@ -7,6 +7,16 @@
 
 .heading
   font-family: $b-fontFamily-heading
+  em
+    color: $c-accent
+    font-family: $b-fontFamily
+    font-size: 150%
+    font-weight: $b-fontWeight
+    letter-spacing: 0
+    text-transform: initial
+    .hero &,
+    .row--image &
+      color: $c-white
 
 // -------------------------------------
 //   Modifiers
@@ -20,6 +30,10 @@
   font-size: $b-fontSize-xl
   +respond-to($g-m)
     font-size: ($b-fontSize-xl * 1.5)
+.heading--xl
+  font-size: ($b-fontSize-xl * 1.25)
+  +respond-to($g-m)
+    font-size: $b-fontSize-xxl
 
 // ----- Styles ----- //
 
