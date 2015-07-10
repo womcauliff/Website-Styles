@@ -1,0 +1,52 @@
+// *************************************
+//
+//   Deck
+//   -> Horizontal navigational content
+//
+// *************************************
+
+.deck
+  margin: $b-space 0
+  a:hover,
+  a:focus
+    .deck-description
+      color: $c-accent
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.deck--filter
+  .deck-description
+    font-size: $b-fontSize-xxs
+    margin-bottom: $b-space-xs
+    +respond-to($g-m)
+      margin-bottom: $b-space-s
+
+.deck--inverted
+  .deck-description
+    color: $c-white
+
+// -------------------------------------
+//   States
+// -------------------------------------
+
+// .structure.is-state
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+// .has-structure
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.deck-description
+  color: $c-text
+  margin-bottom: 0
+  font-size: $b-fontSize-xs
+
+.deck-title
+  font-size: $b-fontSize-s

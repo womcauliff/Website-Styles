@@ -1,5 +1,5 @@
 .hero.hero--resources
-  .hero-media
+  .hero-media{style: "background-image: url(#{image_path 'hero-resources.jpg'})"}
   = link_to "article.html", class: "hero-content" do
     .cell
       %h4.mbxs.tci.tsxs Dr. Joel C. Hunter
@@ -12,10 +12,10 @@
     .cell
       .g
         - 5.times do
-          .g-b.g-b--s--1of2.g-b--m--1of5.mbs
+          .deck.deck--filter.deck--inverted.g-b.g-b--s--1of2.g-b--m--1of5
             = link_to "#", class: "db tci" do
-              %h3.heading.heading--s Theme Filter
-              %p.tsxxs Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.
+              %h3.deck-title Theme Filter
+              %p.deck-description Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.
       %hr.rule.rule--transparent.mbl
       .tsxs
         %span.tco Filter by type:
