@@ -1,0 +1,9 @@
+.row.row--inverted
+  .cell.well.well--page
+    .g
+      - 20.times do
+        .g-b.g-b.g-b--s--1of2.g-b--m--1of4
+          = link_to "#" do
+            .media.media--square{style: "background-image: url(#{lorem.image('600x350')})"}
+            %h4 Full Name
+            %p Position Title
