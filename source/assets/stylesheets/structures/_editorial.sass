@@ -9,19 +9,26 @@
   background: lighten($c-black, 10%)
   background-position: center
   background-size: cover
-  display: block
+  display: flex
   flex: 1 300px
+  flex-flow: column wrap
   height: $b-space-xl * 10
+  justify-content: center
   margin-bottom: $g-gutter
   margin-left: $g-gutter / 2
   margin-right: $g-gutter / 2
   padding: 0 $b-space
   position: relative
   text-align: center
+  &:hover,
+  &:focus
+    &::before
+      background: rgba($c-black, 0.15) 
   &::before
     +stretch
-    background: rgba($c-black, 0.2)
+    background: rgba($c-black, 0.35)
     content: ''
+    transition: background 125ms $b-transition
 
 // -------------------------------------
 //   Modifiers
@@ -53,11 +60,9 @@
 // -------------------------------------
 
 .editorial-title
-  left: 0
+  color: $c-white
   margin: 0 auto
   max-width: $b-maxWidth-s
   padding: 0 $b-space
-  position: absolute
-  right: 0
-  top: 50%
-  transform: translateY(-50%)
+  position: relative
+  z-index: $z-editorial-title
