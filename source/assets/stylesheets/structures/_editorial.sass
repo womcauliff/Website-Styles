@@ -10,8 +10,11 @@
   background-position: center
   background-size: cover
   display: block
+  flex: 1 300px
   height: $b-space-xl * 10
   margin-bottom: $g-gutter
+  margin-left: $g-gutter / 2
+  margin-right: $g-gutter / 2
   padding: 0 $b-space
   position: relative
   text-align: center
@@ -24,7 +27,11 @@
 //   Modifiers
 // -------------------------------------
 
+.editorial--featured
+  flex: 3 100%
 
+.editorial--large
+  flex: 2 640px
 
 // -------------------------------------
 //   States
@@ -36,6 +43,10 @@
 //   Context
 // -------------------------------------
 
+.has-editorials
+  display: flex
+  flex-flow: row wrap
+  margin: 0 (-$g-gutter / 2)
 
 // -------------------------------------
 //   Scaffolding
