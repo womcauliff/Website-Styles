@@ -11,7 +11,7 @@
         - 4.times do
           .deck.deck--inverted.g-b.g-b--s--1of2.g-b--m--1of4.mbm
             = link_to "#", class: "db tci" do
-              = image_tag lorem.image('600x350'), class: "mbm"
+              .media.media--medium{style: "background-image: url(#{lorem.image('600x350')})"}
               %h3.deck-title Locations &amp; Services
               %p.deck-description Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio.
 
@@ -22,7 +22,7 @@
     .g
       - 3.times do
         .g-b.g-b--m--1of3
-          = image_tag lorem.image('600x350'), class: "mbl"
+          .media.media--large{style: "background-image: url(#{lorem.image('600x350')})"}
       - 8.times do
         .g-b.g-b--1of2.g-b--m--1of4
-          = image_tag lorem.image('600x350'), class: "mbl"
+          .media.media--medium{style: "background-image: url(#{lorem.image('600x350')})"}
