@@ -17,7 +17,7 @@
               %h3.deck-title Theme Filter
               %p.deck-description Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.
       %hr.rule.rule--transparent.mbl
-      .tsxs
+      .tac.tsxs
         %span.mrm.tco Filter by type:
         = link_to "Video", "#", class: "mrm tci"
         = link_to "Blogs", "#", class: "mrm tci"
@@ -28,8 +28,33 @@
 
 .row
   .cell.well
-    .has-editorials
-      - 3.times do
+    .g
+      .g-b.g-b--m--1of1
+        = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
+          .editorial-title
+            %h2 Miracles
+            %p How faith can survive miracle-less moments.
+      .g-b.g-b--m--1of3
+        = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
+          .editorial-title
+            %h2 Miracles
+            %p How faith can survive miracle-less moments.
+      .g-b.g-b--m--2of3
+        = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
+          .editorial-title
+            %h2 Miracles
+            %p How faith can survive miracle-less moments.
+      .g-b.g-b--m--1of3
+        = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
+          .editorial-title
+            %h2 Miracles
+            %p How faith can survive miracle-less moments.
+      .g-b.g-b--m--1of3
+        = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
+          .editorial-title
+            %h2 Miracles
+            %p How faith can survive miracle-less moments.
+      .g-b.g-b--m--1of3
         = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
           .editorial-title
             %h2 Miracles

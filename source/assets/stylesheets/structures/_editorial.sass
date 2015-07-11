@@ -10,7 +10,11 @@
   background-position: center
   background-size: cover
   display: block
+  height: $b-space-xl * 10
+  margin-bottom: $g-gutter
+  padding: 0 $b-space
   position: relative
+  text-align: center
   &::before
     +stretch
     background: rgba($c-black, 0.2)
@@ -20,10 +24,7 @@
 //   Modifiers
 // -------------------------------------
 
-.has-editorials
-  display: flex
-  flex-direction: row
-  justify-content: space-between
+
 
 // -------------------------------------
 //   States
@@ -35,10 +36,17 @@
 //   Context
 // -------------------------------------
 
-// .has-structure
 
 // -------------------------------------
 //   Scaffolding
 // -------------------------------------
 
-// .structure-scaffolding
+.editorial-title
+  left: 0
+  margin: 0 auto
+  max-width: $b-maxWidth-s
+  padding: 0 $b-space
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
