@@ -12,7 +12,7 @@
   display: flex
   flex: 1 300px
   flex-flow: column wrap
-  height: $b-space-xl * 10
+  height: $b-space-xl * 9
   justify-content: center
   margin-bottom: $g-gutter
   margin-left: $g-gutter / 2
@@ -23,12 +23,11 @@
   &:hover,
   &:focus
     &::before
-      background: rgba($c-black, 0.15) 
+      background: rgba($c-black, 0.1) 
   &::before
     +stretch
     background: rgba($c-black, 0.35)
     content: ''
-    transition: background 125ms $b-transition
 
 // -------------------------------------
 //   Modifiers

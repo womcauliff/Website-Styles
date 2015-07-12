@@ -14,8 +14,11 @@
   margin-bottom: $b-space-l
   margin-top: $b-space-l
   max-width: 500px
-  padding: $b-space 0 $b-space 155px
+  padding: $b-space 0 $b-space 135px
   position: relative
+  text-shadow: none
+  +respond-to($g-s)
+    padding: $b-space 0 $b-space 155px
   h2
     margin-bottom: $b-space-xs
   &:hover,
@@ -49,7 +52,9 @@
   +stretch
   background: $c-black
   overflow: hidden
-  width: 130px
+  width: 110px
+  +respond-to($g-s)
+    width: 130px
   img
     height: auto
     width: 100%
