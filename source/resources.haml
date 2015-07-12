@@ -2,8 +2,9 @@
   .hero-media{style: "background-image: url(#{image_path 'hero-resources.jpg'})"}
   = link_to "article.html", class: "hero-content" do
     .cell
-      %h4.mbxs.tci.tsxs Dr. Joel C. Hunter
-      %p.tci.tsi.tsxxs May 8, 2015
+      .meta
+        %h4.meta-author Dr. Joel C. Hunter
+        %p.meta-date May 8, 2015
       %hr.rule.rule--resources
       %h1.heading.heading--italic.heading--l Becoming a Spiritual Family of Families
       %p.mbl.tci What its like to be grafted into relationship with God, and others.
@@ -29,55 +30,68 @@
 .row
   .cell.well
     .has-editorials
+      = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
+        .editorial-text
+          %h2.editorial-title Miracles
+          %p How faith can survive miracle-less moments.
+          .tag Wisdom
+        .meta.meta--bottom
+          %h4.meta-author Becky C. Hunter
+          %p.meta-date May 8, 2015
       = link_to "#", class: "editorial editorial--large", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
-          %p How faith can survive miracle-less moments.
+          .editoral-video
+            %i.material-icons play_arrow
+          %h2.editorial-title Because I Told You So
+          .meta
+            %h4.meta-author Becky C. Hunter
+            %p.meta-date May 8, 2015
+          .tag Art
       = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
-          %p How faith can survive miracle-less moments.
+          .editoral-video
+            %i.material-icons play_arrow
+          %h2.editorial-title Because I Told You So
+          .meta
+            %h4.meta-author Becky C. Hunter
+            %p.meta-date May 8, 2015
+          .tag Art
       = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
-          %p How faith can survive miracle-less moments.
-      = link_to "#", class: "editorial editorial--large", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
-        .editorial-text
-          %h2 Miracles
-          %p How faith can survive miracle-less moments.
+          %h2.editorial-title Small Miracles
+          .meta
+            %h4.meta-author Becky C. Hunter
+            %p.meta-date May 8, 2015
+          .tag Wisdom
       = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
-          %p How faith can survive miracle-less moments.
-      = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
-        .editorial-text
-          %h2 Miracles
+          %h2.editorial-title Miracles
           %p How faith can survive miracle-less moments.
       = link_to "#", class: "editorial editorial--featured", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
+          %h2.editorial-title Miracles
           %p How faith can survive miracle-less moments.
       = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
+          %h2.editorial-title Miracles
           %p How faith can survive miracle-less moments.
       = link_to "#", class: "editorial editorial--large", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
+          %h2.editorial-title Miracles
           %p How faith can survive miracle-less moments.
       = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
+          %h2.editorial-title Miracles
           %p How faith can survive miracle-less moments.
       = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
+          %h2.editorial-title Miracles
           %p How faith can survive miracle-less moments.
       = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
+          %h2.editorial-title Miracles
           %p How faith can survive miracle-less moments.
       = link_to "#", class: "editorial editorial--featured", style: "background-image: url(#{image_path 'hero-resources.jpg'})" do
         .editorial-text
-          %h2 Miracles
+          %h2.editorial-title Miracles
           %p How faith can survive miracle-less moments.

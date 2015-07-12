@@ -12,7 +12,7 @@
   display: flex
   flex: 1 300px
   flex-flow: column wrap
-  height: $b-space-xl * 9
+  height: $b-space-xl * 7
   justify-content: center
   margin-bottom: $g-gutter
   margin-left: $g-gutter / 2
@@ -20,6 +20,8 @@
   padding: 0 $b-space
   position: relative
   text-align: center
+  +respond-to($g-m)
+    height: $b-space-xl * 9.5
   &:hover,
   &:focus
     &::before
@@ -33,15 +35,19 @@
 //   Modifiers
 // -------------------------------------
 
+// ----- Sizes ----- //
+
 .editorial--featured
   flex: 3 100%
+
+.editorial--large
+  flex: 2 640px
+
+// ----- Refactor Later ----- //
 
 .editorial--flush
   margin: 0
   width: 100%
-
-.editorial--large
-  flex: 2 640px
 
 .editorial--short
   height: $b-space-xl * 7
@@ -65,6 +71,10 @@
 //   Scaffolding
 // -------------------------------------
 
+.editorial-title
+  font-size: $b-fontSize-xl
+  margin-bottom: $b-space-s
+
 .editorial-text
   color: $c-white
   margin: 0 auto
@@ -72,9 +82,15 @@
   padding: 0 $b-space
   position: relative
   z-index: $z-editorial-title
-  h1, h2, h3, h4
-    font-size: $b-fontSize-xl
-    margin-bottom: $b-space-s
   p
     font-size: $b-fontSize-xs
-    margin-bottom: 0
+
+.editoral-video
+  background: rgba($c-accent, 0.85)
+  border-radius: 50%
+  height: 90px
+  margin: 0 auto ($b-space * 1.5)
+  width: 90px
+  i
+    font-size: 65px
+    line-height: 90px
