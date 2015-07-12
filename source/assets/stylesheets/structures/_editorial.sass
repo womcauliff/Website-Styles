@@ -36,8 +36,15 @@
 .editorial--featured
   flex: 3 100%
 
+.editorial--flush
+  margin: 0
+  width: 100%
+
 .editorial--large
   flex: 2 640px
+
+.editorial--short
+  height: $b-space-xl * 7
 
 // -------------------------------------
 //   States
@@ -58,10 +65,16 @@
 //   Scaffolding
 // -------------------------------------
 
-.editorial-title
+.editorial-text
   color: $c-white
   margin: 0 auto
-  max-width: $b-maxWidth-s
+  max-width: $b-maxWidth-s * 0.75
   padding: 0 $b-space
   position: relative
   z-index: $z-editorial-title
+  h1, h2, h3, h4
+    font-size: $b-fontSize-xl
+    margin-bottom: $b-space-s
+  p
+    font-size: $b-fontSize-xs
+    margin-bottom: 0
