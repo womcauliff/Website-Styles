@@ -43,6 +43,32 @@
 .editorial--large
   flex: 2 640px
 
+// ----- Styles ----- //
+
+.editorial--imageless
+  background: $c-white
+  justify-content: space-between
+  padding: $b-space-l
+  text-align: left
+  +respond-to($g-m)
+    padding: $b-space-xl
+  &::before
+    display: none
+  .editorial-text
+    color: $c-text
+    font-style: italic
+    height: 70%
+    max-width: none
+    overflow: hidden
+    padding: 0
+    &::after
+      +stretch
+      background-image: linear-gradient(rgba($c-white, 0) 50%, $c-white 95%)
+      content: ''
+    p
+      +respond-to($g-m)
+        font-size: $b-fontSize !important
+
 // ----- Refactor Later ----- //
 
 .editorial--flush
