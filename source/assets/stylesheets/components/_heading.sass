@@ -28,10 +28,12 @@
 
 .heading--s
   font-size: $b-fontSize-s
+
 .heading--l
   font-size: $b-fontSize-xl
   +respond-to($g-m)
     font-size: ($b-fontSize-xl * 1.5)
+
 .heading--xl
   font-size: ($b-fontSize-xl * 1.25)
   +respond-to($g-m)
@@ -45,3 +47,8 @@
   font-weight: $b-fontWeight
   letter-spacing: 0
   text-transform: initial
+
+.heading--page
+  margin-top: $b-space-xl
+  +respond-to($g-m)
+    margin-top: $b-space-xl * 2

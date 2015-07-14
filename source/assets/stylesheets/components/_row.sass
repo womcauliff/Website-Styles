@@ -16,7 +16,15 @@
 //   Modifiers
 // -------------------------------------
 
-// ----- Gray ----- //
+// ----- Colors ----- //
+
+.row--blue
+  background: $c-blue-darker
+  background-image: linear-gradient(darken($c-blue-darker, 7%), lighten($c-blue-darker, 7%))
+  color: $c-white
+
+.row--inverted
+  background: $c-background-inverted
 
 .row--gray
   background: $c-gray-1
@@ -33,8 +41,3 @@
     +stretch
     background: rgba($c-black, 0.25)
     content: ''
-
-// ----- Theme ----- //
-
-.row--inverted
-  background: $c-background-inverted

@@ -1,0 +1,23 @@
+.row.row--blue
+  .cell.well
+    .g
+      .g-b.g-b--m--1of2
+        %h1.heading.heading--page Ministries
+        %p.tss Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla.
+
+.row.row--inverted
+  .cell.well
+    .g
+      .g-b.g-b--s--2of3.g-b--m--3of4.fr
+        %hr.rule.mbl.mtf
+        %h4.heading.mbl.tsxs All Ministries
+        .g
+          - 20.times do
+            .g-b.g-b.g-b--s--1of2.g-b--m--1of3
+              = link_to "#" do
+                .media.media--large{style: "background-image: url(#{lorem.image('600x350')})"}
+                %h4 Full Name
+                %p Position Title
+      .g-b.g-b--s--1of3.g-b--m--1of4
+        %hr.rule.mbl.mtf
+        %h4.heading.mbl.tsxs Filter
