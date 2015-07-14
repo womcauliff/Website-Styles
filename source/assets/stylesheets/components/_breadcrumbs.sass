@@ -1,0 +1,28 @@
+// *************************************
+//
+//   Breadcrumbs
+//   -> "Remember where you came from"
+//
+// *************************************
+
+.breadcrumbs
+  font-family: $b-fontFamily-heading
+  font-size: $b-fontSize-xxs * 0.8
+  letter-spacing: $b-letterSpacing
+  list-style: none
+  margin-bottom: 0
+  padding-left: 0
+  text-transform: uppercase
+  a
+    color: rgba($c-white, 0.7)
+    margin-right: $b-space-xs
+    &:hover,
+    &:focus
+      color: $c-white
+  li
+    display: inline-block
+    &::after
+      color: rgba($c-white, 0.5)
+      content: '•'
+    &:last-child::after
+      display: none

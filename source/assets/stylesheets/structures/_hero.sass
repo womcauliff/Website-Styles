@@ -7,6 +7,7 @@
 
 .hero
   background: none
+  color: $c-white
 
 // -------------------------------------
 //   Modifiers
@@ -19,6 +20,21 @@
     padding: 50vh ($g-gutter / 2) $b-space
     +respond-to($g-m)
       padding: 70vh $g-gutter $b-space
+
+// ----- Resource ------ //
+
+.hero--resource
+  .hero-content
+    padding: ($b-space-xl * 3) ($g-gutter / 2) $b-space
+    +respond-to($g-m)
+      padding: 30vh $g-gutter $b-space
+  .hero-extend
+    background-image: linear-gradient(rgba($c-black, 0) 0%, rgba($c-black, 0.5) 75%, $c-black 100%)
+    +respond-to($g-m)
+      padding-bottom: $b-space
+  .hero-media
+    height: 70%
+    position: absolute
 
 // ----- Resources ----- //
 
@@ -61,7 +77,6 @@
 // -------------------------------------
 
 .hero-content
-  color: $c-white
   display: block
   position: relative
   z-index: $z-hero-content
