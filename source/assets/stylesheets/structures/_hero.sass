@@ -24,6 +24,7 @@
 // ----- Resource ------ //
 
 .hero--resource
+  position: relative
   .hero-content
     padding: ($b-space-xl * 3) ($g-gutter / 2) $b-space
     +respond-to($g-m)
@@ -33,7 +34,6 @@
     +respond-to($g-m)
       padding-bottom: $b-space
   .hero-media
-    height: 70%
     position: absolute
 
 // ----- Resources ----- //
@@ -54,11 +54,15 @@
 // ----- Secondary ----- //
 
 .hero--secondary
+  position: relative
   .hero-content
-    padding: 30vh ($g-gutter / 2) $b-space
+    padding: ($b-space-xl * 2) ($g-gutter / 2) $b-space-l
+    text-align: center
     +respond-to($g-m)
-      padding: 38vh ($g-gutter / 2) 25vh
-      text-align: center
+      padding: 30vh $g-gutter 20vh
+  .hero-media
+    opacity: 0.5
+    position: absolute
 
 // -------------------------------------
 //   States
