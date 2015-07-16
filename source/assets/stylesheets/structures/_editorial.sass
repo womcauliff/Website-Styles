@@ -25,11 +25,15 @@
   &:hover,
   &:focus
     &::before
-      background: rgba($c-black, 0.1) 
+      bottom: $g-gutter / 2
+      left: $g-gutter / 2
+      right: $g-gutter / 2
+      top: $g-gutter / 2
   &::before
     +stretch
-    background: rgba($c-black, 0.35)
+    background: rgba($c-black, 0.45)
     content: ''
+    transition: all 250ms $b-transition
 
 // -------------------------------------
 //   Modifiers
