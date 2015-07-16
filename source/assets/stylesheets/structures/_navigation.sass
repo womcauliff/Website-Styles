@@ -19,6 +19,14 @@
   top: ($g-gutter / 2)
   transition: all 1s $b-transition, height 700ms $b-transition
   z-index: $z-nav
+  +respond-to($g-m)
+    background: rgba($c-black, 0.85)
+    box-shadow: none
+    height: $navigation-height
+    left: $g-gutter
+    padding: 0 ($g-gutter / 1.5)
+    right: $g-gutter
+    top: $navigation-height
   &::before
     background: rgba($c-black, 0.75)
     bottom: 0
@@ -31,19 +39,16 @@
     transition: opacity 700ms $b-transition
     visibility: hidden
     z-index: $z-nav-backdrop
-  +respond-to($g-m)
-    background: rgba($c-black, 0.85)
-    height: $navigation-height
-    left: $g-gutter
-    padding: 0 $g-gutter
-    right: $g-gutter
-    top: ($b-space * 1.75)
-    &::before
-      background: none
-      background-image: linear-gradient(rgba($c-black, 0.5) 0%, rgba($c-black, 0.1) 75%, rgba($c-black, 0))
-      bottom: auto
-      height: $b-space * 7
+    +respond-to($g-m)
+      background: rgba($c-accent, 0.95)
+      bottom: 100%
+      height: $navigation-height / 2
+      margin-left: auto
+      margin-right: auto
+      max-width: $b-maxWidth
       opacity: 1
+      position: absolute
+      top: auto
       visibility: visible
 
 // -------------------------------------
@@ -134,7 +139,7 @@
 
 .navigation-primary
   +respond-to($g-m)
-    margin-right: $navigation-height + $b-space-l
+    margin-right: $navigation-height + $b-space
   a
     font-family: $b-fontFamily-heading
     font-size: $b-fontSize-xl
@@ -167,7 +172,7 @@
   transition: all 500ms $b-transition
   visibility: hidden
   +respond-to($g-m)
-    background: $c-accent
+    background: none
     opacity: 1
     position: absolute
     right: 0
@@ -214,6 +219,7 @@
 
 .is-searching
   +respond-to($g-m)
+    background: darken($c-accent, 10%)
     width: 425px
   input
     +respond-to($g-m)
@@ -227,7 +233,7 @@
   +respond-to($g-m)
     margin-top: 0
     position: absolute
-    right: $g-gutter
+    right: $b-space
     top: (-$b-space * 1.75)
   +respond-to($navigation-vertical-s, max-height)
     margin-top: 0
