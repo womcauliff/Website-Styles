@@ -1,5 +1,5 @@
 .hero.hero--secondary
-  .hero-media{style: "background-image: url(#{image_path 'hero-tree.jpg'})"}
+  .hero-media{style: "background-image: url(#{image_path 'hero-resources.jpg'})"}
   .hero-content
     .cell.cell--s
       %h1.heading.heading--xl Ministries
@@ -10,7 +10,7 @@
     .g
       .g-b.g-b--s--2of3.g-b--m--3of4.fr
         %hr.rule.mbl.mtf
-        %h2.heading.mbl.tsxs All Ministries
+        %h2.heading--italic.heading--m.mbl All Ministries
         .g.g--dib
           - 4.times do
             .deck.g-b.g-b--m--1of2.g-b--l--1of3
@@ -35,11 +35,11 @@
                 %p.deck-description Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
       .g-b.g-b--s--1of3.g-b--m--1of4
         %hr.rule.mbl.mtf
-        %h3.heading.mbl.tsxs Filter
+        %h3.heading--italic.heading--m.mbl Filter
         %h4.heading.mbm.tsxxs Location
         .input.input--group
-          %input.input.input-checkbox#location-longwood{type: "checkbox"}
-          %label.input-label{for: "location-longwood"} Longwood
+          %input.input.input-checkbox#location-longwood{type: "checkbox", checked: true}
+          %label.input-label.is-active{for: "location-longwood"} Longwood
         .input.input--group
           %input.input.input-checkbox#location-oviedo{type: "checkbox"}
           %label.input-label{for: "location-oviedo"} Oviedo
