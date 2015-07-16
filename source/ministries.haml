@@ -11,8 +11,23 @@
       .g-b.g-b--s--2of3.g-b--m--3of4.fr
         %hr.rule.mbl.mtf
         %h2.heading.mbl.tsxs All Ministries
-        .g
-          - 20.times do
+        .g.g--dib
+          - 4.times do
+            .deck.g-b.g-b--m--1of2.g-b--l--1of3
+              = link_to "#" do
+                .media.media--large{style: "background-image: url(#{lorem.image('600x350')})"}
+                %h4.deck-title Ministry Name
+                %p.deck-description Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+            .deck.g-b.g-b--m--1of2.g-b--l--1of3
+              = link_to "#" do
+                .media.media--large{style: "background-image: url(#{lorem.image('600x350')})"}
+                %h4.deck-title Ministry Name
+                %p.deck-description Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            .deck.g-b.g-b--m--1of2.g-b--l--1of3
+              = link_to "#" do
+                .media.media--large{style: "background-image: url(#{lorem.image('600x350')})"}
+                %h4.deck-title Ministry Name
+                %p.deck-description Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
             .deck.g-b.g-b--m--1of2.g-b--l--1of3
               = link_to "#" do
                 .media.media--large{style: "background-image: url(#{lorem.image('600x350')})"}
