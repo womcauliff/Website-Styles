@@ -24,11 +24,21 @@
                   %dd.dictionary-definition Ministry
         %hr.rule.mbl.mtxl
         %h2.heading.heading--italic.heading--m.mbl All Events
-        %ol
+        %ul.has-events
           %li
             = link_to "event.html", class: "event" do
               .event-date{style: "background-image: url(#{lorem.image('350x350')})"} 12 <span>May</span>
-              .event-details Fusce Ipsum Mattis Euismod Pharetra
+              .event-details
+                %h4.heading.heading--s Fusce Ipsum Mattis Euismod Pharetra
+                %dl.decitionary.dictionary--inline
+                  %dt.dictionary-term Date:
+                  %dd.dictionary-definition May 12, 2015
+                  %dt.dictionary-term Time:
+                  %dd.dictionary-definition 8:00p
+                  %dt.dictionary-term Location:
+                  %dd.dictionary-definition Longwood
+                  %dt.dictionary-term Category:
+                  %dd.dictionary-definition Ministry
       .g-b.g-b--m--1of4
         %hr.rule.mbl
         %table.calendar.mbxl
