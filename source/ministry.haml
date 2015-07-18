@@ -2,6 +2,9 @@
   .cell.well
     .g
       .g-b.g-b--m--1of2
+        %ul.breadcrumbs
+          %li= link_to "Home", "index.html"
+          %li= link_to "Ministries", "ministries.html"
         %h1.heading.heading--italic.heading--l Ministry Name
         %p.mbxl.tss Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
     .media.media--xl.mbxl{style: "background-image: url(#{image_path 'hero-home.jpg'})"}
