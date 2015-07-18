@@ -16,13 +16,16 @@
 .dictionary--inline
   .dictionary-definition,
   .dictionary-term
-    display: inline-block
-    float: none
-    margin-bottom: 0
+    +respond-to($g-s)
+      display: inline-block
+      float: none
+      margin-bottom: 0
   .dictionary-definition
-    margin-right: $b-space
+    +respond-to($g-s)
+      margin-right: $b-space
   .dictionary-term
-    margin-right: $b-space-xs
+    +respond-to($g-s)
+      margin-right: $b-space-xs
 
 // -------------------------------------
 //   Structures

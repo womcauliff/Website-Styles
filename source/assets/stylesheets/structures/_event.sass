@@ -9,9 +9,11 @@
   background: $c-gray-1
   display: block
   margin-bottom: $b-space-l
-  padding: $b-space-l $b-space-l $b-space-l calc(225px + 2%)
+  padding: ($b-space-xl * 2.25) $b-space $b-space
   position: relative
   transition: all 250ms $b-transition
+  +respond-to($g-m)
+    padding: $b-space-l $b-space-l $b-space-l calc(225px + 2%)
   &:hover,
   &:focus
     background: $c-accent
@@ -42,16 +44,20 @@
   background: $c-accent
   background-position: center
   background-size: cover
-  bottom: 0
   color: $c-white
   display: flex
   flex-flow: column nowrap
-  justify-content: center
+  height: $b-space-xl * 2
   left: 0
+  justify-content: center
   position: absolute
   text-align: center
   top: 0
-  width: 200px
+  width: 100%
+  +respond-to($g-m)
+    bottom: 0
+    height: auto
+    width: 200px
   &::before
     +stretch
     background: rgba($c-black, 0.45)
