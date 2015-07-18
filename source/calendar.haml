@@ -7,16 +7,38 @@
     .g
       .g-b.g-b--m--3of4.fr
         %hr.rule.mbl
-        %h1.heading.heading--xl Under Construction
+        %h2.heading--italic.heading--m.mbl Featured Events
+        .g.g--dib
+          - 3.times do
+            .deck.g-b.g-b--m--1of2.g-b--l--1of3
+              = link_to "event.html" do
+                .media.media--medium{style: "background-image: url(#{lorem.image('600x350')})"}
+                %h4.deck-title Ministry Name
+                %dl.deck-description
+                  %dt Date:
+                  %dd May 12, 2015
+                  %dt Time:
+                  %dd 8:00p
+                  %dt Location:
+                  %dd Longwood
+                  %dt Category:
+                  %dd Ministry
       .g-b.g-b--m--1of4
         %hr.rule.mbl
-        %table.calendar
+        %table.calendar.mbxl
           %thead
             %tr
               %td
                 = link_to "#" do
                   %i.material-icons keyboard_arrow_left
-              %td{colspan: '5'} August 2015
+              %td{colspan: '2'} August
+              %td
+                = link_to "#" do
+                  %i.material-icons keyboard_arrow_right
+              %td
+                = link_to "#" do
+                  %i.material-icons keyboard_arrow_left
+              %td 2015
               %td
                 = link_to "#" do
                   %i.material-icons keyboard_arrow_right
@@ -69,3 +91,4 @@
               %td 30
               %td 31
               %td 1
+        = partial "shared/filter"
