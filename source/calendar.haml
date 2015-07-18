@@ -2,27 +2,33 @@
   .cell.well
     .g
       .g-b.g-b--m--1of2
-        %h1.heading.heading--l Calendar
-        %p.mbxl.tss Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        %h1.heading.heading--l.mbxl Calendar of Events
     .g
       .g-b.g-b--m--3of4.fr
         %hr.rule.mbl
-        %h2.heading--italic.heading--m.mbl Featured Events
+        %h2.heading.heading--italic.heading--m.mbl Featured Events
         .g.g--dib
           - 3.times do
-            .deck.g-b.g-b--m--1of2.g-b--l--1of3
+            .deck.g-b.g-b--s--1of2.g-b--l--1of3
               = link_to "event.html" do
                 .media.media--medium{style: "background-image: url(#{lorem.image('600x350')})"}
-                %h4.deck-title Ministry Name
-                %dl.deck-description
-                  %dt Date:
-                  %dd May 12, 2015
-                  %dt Time:
-                  %dd 8:00p
-                  %dt Location:
-                  %dd Longwood
-                  %dt Category:
-                  %dd Ministry
+                %h4.deck-title Event Title Goes Here
+                %dl.dictionary.deck-description
+                  %dt.dictionary-term Date:
+                  %dd.dictionary-definition May 12, 2015
+                  %dt.dictionary-term Time:
+                  %dd.dictionary-definition 8:00p
+                  %dt.dictionary-term Location:
+                  %dd.dictionary-definition Longwood
+                  %dt.dictionary-term Category:
+                  %dd.dictionary-definition Ministry
+        %hr.rule.mbl.mtxl
+        %h2.heading.heading--italic.heading--m.mbl All Events
+        %ol
+          %li
+            = link_to "event.html", class: "event" do
+              .event-date{style: "background-image: url(#{lorem.image('350x350')})"} 12 <span>May</span>
+              .event-details Fusce Ipsum Mattis Euismod Pharetra
       .g-b.g-b--m--1of4
         %hr.rule.mbl
         %table.calendar.mbxl
