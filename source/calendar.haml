@@ -25,19 +25,9 @@
         %hr.rule.mbl.mtxl
         %h2.heading.heading--italic.heading--m.mbl All Events
         %ul.has-events
-          %li
-            = link_to "event.html", class: "event" do
-              .event-date{style: "background-image: url(#{lorem.image('350x350')})"} 12 <span>May</span>
-              %h4.event-title Fusce Ipsum Mattis Euismod Pharetra
-              %dl.dictionary.dictionary--inline.event-details
-                %dt.dictionary-term Date:
-                %dd.dictionary-definition May 12, 2015
-                %dt.dictionary-term Time:
-                %dd.dictionary-definition 8:00p
-                %dt.dictionary-term Location:
-                %dd.dictionary-definition Longwood
-                %dt.dictionary-term Category:
-                %dd.dictionary-definition Ministry
+          - 10.times do
+            = partial "shared/event"
+        = link_to "Load more", "#", class: "pagination"
       .g-b.g-b--m--1of4
         %hr.rule.mbl
         %table.calendar.mbxl

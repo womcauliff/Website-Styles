@@ -1,0 +1,77 @@
+// *************************************
+//
+//   Event
+//   -> Individual elements in a list of events
+//
+// *************************************
+
+.event
+  background: $c-gray-1
+  display: block
+  margin-bottom: $b-space-l
+  padding: $b-space-l $b-space-l $b-space-l calc(225px + 2%)
+  position: relative
+  transition: all 250ms $b-transition
+  &:hover,
+  &:focus
+    background: $c-accent
+    color: $c-white
+    .event-date::before
+      bottom: $g-gutter / 3
+      left: $g-gutter / 3
+      right: $g-gutter / 3
+      top: $g-gutter / 3
+    .event-details
+      color: $c-white
+    .event-title
+      border-color: rgba($c-white, 0.25)
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.has-events
+  list-style: none
+  padding-left: 0
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.event-date
+  background: $c-accent
+  background-position: center
+  background-size: cover
+  bottom: 0
+  color: $c-white
+  display: flex
+  flex-flow: column nowrap
+  justify-content: center
+  left: 0
+  position: absolute
+  text-align: center
+  top: 0
+  width: 200px
+  &::before
+    +stretch
+    background: rgba($c-black, 0.45)
+    content: ''
+    transition: all 250ms $b-transition
+
+.event-details
+  color: $c-gray-3
+  font-size: $b-fontSize-xs
+
+.event-title
+  border-bottom: $b-borderWidth $b-borderStyle darken($c-gray-2, 10%)
+  font-family: $b-fontFamily
+  font-size: $b-fontSize-l
+  font-style: italic
+  font-weight: $b-fontWeight
+  letter-spacing: 0
+  margin-bottom: $b-space-s
+  overflow: hidden
+  padding-bottom: $b-space-s
+  text-overflow: ellipsis
+  text-transform: initial
+  white-space: nowrap
