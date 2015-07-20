@@ -10,7 +10,7 @@
   font-size: $b-fontSize-xxs * 0.8
   letter-spacing: $b-letterSpacing
   list-style: none
-  margin-bottom: $b-space
+  margin-bottom: $b-space-s
   padding-left: 0
   text-transform: uppercase
   a
@@ -26,3 +26,14 @@
       content: '•'
     &:last-child::after
       display: none
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.breadcrumbs--transparent
+  margin-bottom: 0
+  a
+    color: rgba($c-white, 0.75)
+  li::after
+    color: rgba($c-white, 0.5)
