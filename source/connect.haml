@@ -22,7 +22,12 @@
     .g
       - 3.times do
         .g-b.g-b--m--1of3
-          = link_to "", "#", class: "media media--medium", style: "background-image: url(#{lorem.image('600x350')})"
+          = link_to "#", class: "media media--connect media--medium", style: "background-image: url(http://lorempixel.com/600/350/abstract)" do
+            .media-content
+              %h3.mbf.tss Connect Title
       - 8.times do
         .g-b.g-b--1of2.g-b--m--1of4
-          = link_to "", "#", class: "media media--small", style: "background-image: url(#{lorem.image('600x350')})"
+          = link_to "#", class: "media media--connect media--small", style: "background-image: url(http://lorempixel.com/600/350/abstract)" do
+            .media-content
+              %h3.mbf.tss Connect Title
+    = link_to "Load More", "#", class: "pagination"

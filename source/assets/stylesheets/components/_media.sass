@@ -41,6 +41,22 @@
 
 // ----- Styles ----- //
 
+.media--connect
+  display: flex
+  flex-flow: column wrap
+  justify-content: center
+  margin-bottom: $b-space-l
+  text-align: center
+  &::before
+    +stretch
+    background: rgba($c-black, 0.35)
+    content: ''
+    z-index: $z-media-overlay
+  &:hover,
+  &:focus
+    &::before
+      background: rgba($c-black, 0.1)
+
 .media--text
   display: flex
   flex-flow: column wrap
