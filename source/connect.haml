@@ -22,7 +22,7 @@
     .g
       - 3.times do
         .g-b.g-b--m--1of3
-          .media.media--medium{style: "background-image: url(#{lorem.image('600x350')})"}
+          = link_to "", "#", class: "media media--medium", style: "background-image: url(#{lorem.image('600x350')})"
       - 8.times do
         .g-b.g-b--1of2.g-b--m--1of4
-          .media.media--small{style: "background-image: url(#{lorem.image('600x350')})"}
+          = link_to "", "#", class: "media media--small", style: "background-image: url(#{lorem.image('600x350')})"
