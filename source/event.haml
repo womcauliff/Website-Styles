@@ -4,11 +4,42 @@
       .g-b.g-b--m--1of2
         %ul.breadcrumbs
           %li= link_to "Home", "index.html"
-          %li= link_to "Calendar", "ministries.html"
+          %li= link_to "Calendar", "calendar.html"
         %h1.heading.heading--italic.heading--l.mbxl Event Name
     .g
+      .g-b.g-b--m--1of3.fr
+        .card.card--event
+          .date Saturday, June <span>12</span>
+        .card.card--deck.pal.mbl
+          %dl.dictionary.dictionary--aligned
+            %dt.dictionary-term Time:
+            %dd.dictionary-definition 7:00p to 8:00p
+            %dt.dictionary-term.mbl Location:
+            %dd.dictionary-definition
+              = link_to "#" do
+                The Rink
+                %br
+                530 Dog Track Road
+                %br
+                Longwood, FL 32750
+          = link_to "Register", "#", class: "btn btn--full mtm"
       .g-b.g-b--m--2of3
         .media.media--large.mbxl{style: "background-image: url(#{image_path 'hero-home.jpg'})"}
-      .g-b.g-b--m--1of3
-        .card.card--deck.pal
-          .date May <span>12</span> 2015
+    .g
+      .g-b.g-b--m--1of2
+        %hr.rule.mbl
+        %h2.heading--italic.heading--m.mbl Overview
+        %p.tsxs Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nullam id dolor id nibh ultricies vehicula ut id elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+        %p.mbl.tsxs Nulla vitae elit libero, a pharetra augue. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
+      .g-b.g-b--s--1of2.g-b--m--1of4
+        %hr.rule.mbl
+        %h2.heading--italic.heading--m.mbl Who's Going
+        .g.g--flush
+          -9.times do
+            .g-b.g-b--1of3
+              = link_to "#" do
+                = image_tag "http://lorempixel.com/200/200/abstract", class: "db"
+      .g-b.g-b--s--1of2.g-b--m--1of4
+        %hr.rule.mbl
+          %h2.heading--italic.heading--m.mbl Directions
+          = image_tag "http://lorempixel.com/400/400/abstract", class: "db"
