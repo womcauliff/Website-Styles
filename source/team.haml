@@ -2,9 +2,11 @@
   .cell.well
     .g
       .g-b.g-b--m--1of2
+        %ul.breadcrumbs
+          %li= link_to "Home", "index.html"
+          %li= link_to "About", "about.html"
         %h1.heading.heading--l Meet the Team
-        %p.mbxl.tss Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    %hr.rule.mbl
+    = link_to "Filter", "#", class: "pagination mbl"
     .g.g--dib
       - 20.times do
         .deck.g-b.g-b.g-b--s--1of2.g-b--m--1of3.g-b--l--1of4
