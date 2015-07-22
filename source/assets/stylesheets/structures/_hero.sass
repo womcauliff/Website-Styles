@@ -13,6 +13,26 @@
 //   Modifiers
 // -------------------------------------
 
+// ----- Live ----- //
+
+.hero--live
+  background: $c-live
+  position: relative
+  .hero-content
+    border-bottom: $b-borderWidth $b-borderStyle rgba($c-white, 0.25)
+    margin-bottom: $b-space-l
+    padding: ($b-space-xl * 2.25) ($g-gutter / 2) $b-space-xl
+    +respond-to($g-m)
+      border-bottom: 0
+      margin-bottom: 0
+      padding: ($b-space-xl * 5) $g-gutter ($b-space-xl * 2)
+  .hero-extend
+    background-image: none
+  .hero-media
+    opacity: 1
+    position: absolute
+    z-index: 0
+
 // ----- Primary ----- //
 
 .hero--primary
@@ -98,11 +118,14 @@
     padding: ($b-space-xl * 3.25) $g-gutter $b-space-xl
 
 .hero-media
-  +stretch
   background-image: url(image-path('hero-home.jpg'))
   background-position: center
   background-size: cover
+  bottom: 0
+  left: 0
   opacity: 0.85
   position: fixed
+  right: 0
+  top: 0
   z-index: $z-hero-media
 
