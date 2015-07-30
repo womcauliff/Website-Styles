@@ -5,7 +5,13 @@
 //
 // *************************************
 
-// .input
+.input
+  display: block
+  outline: none
+  width: 100%
+  &::placeholder
+    color: lighten($c-text, 35%)
+    font-style: italic
 
 // -------------------------------------
 //   Modifiers
@@ -15,6 +21,17 @@
   display: block
   margin-bottom: $b-space-s
   width: 100%
+
+.input--search
+  border: none
+  border-bottom: $b-borderStyle $b-borderWidth $c-gray-2
+  font-size: $b-fontSize-xl
+  margin-bottom: $b-space-l
+  +respond-to($g-m)
+    font-size: $b-fontSize-xxl
+    margin-bottom: $b-space-xl
+  &:focus
+    border-bottom-color: $c-accent
 
 // -------------------------------------
 //   Scaffolding

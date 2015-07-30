@@ -1,10 +1,10 @@
 .row.row--inverted.row--page
   .cell.well
-    %input.mbxl{type: "search"}
+    %input.input.input--search{type: "search", placeholder: "Search...", autofocus: true}
     %hr.rule.mbl
     .g
       .g-b.g-b--m--1of3
-        %h2.heading--italic.heading--m Search Results
+        %h2.heading--italic.heading--m.mbl Search Results
       .g-b.g-b--m--2of3
         %ul.has-results
           - 8.times do
