@@ -6,9 +6,15 @@
 // *************************************
 
 .input
+  border: $b-borderStyle $b-borderWidth $c-gray-2
+  border-radius: 4px
   display: block
+  margin-bottom: $b-space-s
   outline: none
+  padding: $b-space-s $b-space
   width: 100%
+  +respond-to($g-m)
+    margin-bottom: $b-space-xs
   &::placeholder
     color: lighten($c-text, 35%)
     font-style: italic
@@ -38,7 +44,6 @@
 // -------------------------------------
 
 .has-input-group
-  margin-bottom: $b-space-xs
   width: 100%
 
 // -------------------------------------

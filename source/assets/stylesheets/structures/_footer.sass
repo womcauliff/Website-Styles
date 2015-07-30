@@ -1,0 +1,35 @@
+// *************************************
+//
+//   Footer
+//   -> Global footer nav
+//
+// *************************************
+
+.footer
+  @extend .row
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.footer-navPrimary,
+.footer-navSecondary
+  font-size: $b-fontSize-xs
+  list-style: none
+
+.footer-navPrimary
+  font-family: $b-fontFamily-heading
+  letter-spacing: $b-letterSpacing
+  text-transform: uppercase
+  a
+    color: $c-white
+    &:hover,
+    &:focus
+      color: $c-accent
+
+.footer-navSecondary
+  a
+    color: $c-gray-3
+    &:hover,
+    &:focus
+      color: $c-accent

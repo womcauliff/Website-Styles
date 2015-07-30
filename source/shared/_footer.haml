@@ -1,4 +1,4 @@
-.row
+%footer.footer
   .cell.well
     .g
       .g-b.g-b--m--1of3
@@ -9,14 +9,14 @@
       .g-b.g-b--m--1of3
         %hr.rule.rule--transparent.mbl
         .g
-          %ul.g-b.g-b--1of2
+          %ul.footer-navPrimary.g-b.g-b--1of2
             %li= link_to "Connect", "#"
             %li= link_to "Resources", "#"
             %li= link_to "About", "#"
             %li= link_to "Another Link", "#"
             %li= link_to "But Not", "#"
             %li= link_to "Too Many", "#"
-          %ul.g-b.g-b--1of2
+          %ul.footer-navSecondary.g-b.g-b--1of2
             %li= link_to "Calendar", "#"
             %li= link_to "Ministries", "#"
             %li= link_to "Need Help?", "#"
@@ -30,11 +30,11 @@
           .has-input-group
             %input#events{type: "checkbox"}
             %label.input-label{for: "events"} Events Newsletter
-          .has-input-group
+          .has-input-group.mbm
             %input#resources{type: "checkbox"}
             %label.input-label{for: "resources"} Resources Newsletter
-          %input.input#email{type: "email", placeholder: "Enter your email address..."}
-          %input.btn{type: "submit", value: "Sign Up"}
+          %input.input.mbm#email{type: "email", placeholder: "Enter your email address..."}
+          %input.btn.btn--full{type: "submit", value: "Sign Up"}
 
     %hr.rule.rule--transparent.mbl.mtxl
     %p.tsxxs &copy; 2015 Northland, A Church Distributed.
