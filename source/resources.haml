@@ -11,13 +11,12 @@
       .btn.btn--transparent Read the article
   .hero-extend
     .cell
-      .g
-        - 5.times do
-          .deck.deck--filter.deck--inverted.g-b.g-b--s--1of2.g-b--m--1of5
-            = link_to "#", class: "db tci" do
-              %h3.deck-title Theme Filter
-              %p.deck-description Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem.
-      %hr.rule.rule--transparent.mbl
+      .filter.filter--inverted
+        = link_to "Videos", "#", class: "filter-item"
+        = link_to "Articles", "#", class: "filter-item is-active"
+        = link_to "Blogs", "#", class: "filter-item"
+        = link_to "Resources", "#", class: "filter-item"
+        = link_to "Connect", "#", class: "filter-item"
       .tac.tsxs
         %span.mrm.tco Filter by type:
         = link_to "Video", "#", class: "mrm tci"

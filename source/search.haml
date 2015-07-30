@@ -1,6 +1,12 @@
 .row.row--inverted.row--page
   .cell.well
     %input.input.input--search{type: "search", placeholder: "Search...", autofocus: true}
+    .filter
+      = link_to "Videos", "#", class: "filter-item"
+      = link_to "Articles", "#", class: "filter-item is-active"
+      = link_to "Blogs", "#", class: "filter-item"
+      = link_to "Resources", "#", class: "filter-item"
+      = link_to "Connect", "#", class: "filter-item"
     %hr.rule.mbl
     .g
       .g-b.g-b--m--1of3

@@ -1,0 +1,49 @@
+// *************************************
+//
+//   Filter
+//   -> Single-page navigation
+//
+// *************************************
+
+.filter
+  background: $c-gray-1
+  column-count: 2
+  column-gap: 0
+  margin-bottom: $b-space-l
+  padding: $b-space 0
+  +respond-to($g-m)
+    column-count: 1
+    margin-bottom: $b-space-xl
+    padding: $b-space-s 0
+    text-align: center
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.filter--inverted
+  background: rgba($c-background, 0.5)
+  margin-bottom: $b-space-l
+  .filter-item
+    font-size: $b-fontSize-s
+    +respond-to($g-m)
+      font-size: $b-fontSize
+  .filter-item.is-active
+    color: $c-text-inverted
+
+// -------------------------------------
+//   Context
+// -------------------------------------
+
+.filter-item
+  display: block
+  font-size: $b-fontSize-xs
+  margin: 0 $b-space
+  padding: $b-space-xs 0
+  +respond-to($g-m)
+    display: inline-block
+    font-size: $b-fontSize-s
+    padding: $b-space 0
+
+.filter-item.is-active
+  color: $c-text
