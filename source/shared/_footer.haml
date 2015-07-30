@@ -27,11 +27,13 @@
         %h3.tci.tss Newsletters
         %p.tco.tsxs Northland offers several newsletters that deliver the content you care about directly to your inbox. Select which newsletters you would like to receive, and enter your email address to sign up!
         %form{action: "#"}
-          %input#events{type: "checkbox"}
-          %label{for: "events"} Events Newsletter
-          %input#resources{type: "checkbox"}
-          %label{for: "resources"} Resources Newsletter
-          %input#email{type: "email", placeholder: "Enter your email address..."}
+          .has-input-group
+            %input#events{type: "checkbox"}
+            %label.input-label{for: "events"} Events Newsletter
+          .has-input-group
+            %input#resources{type: "checkbox"}
+            %label.input-label{for: "resources"} Resources Newsletter
+          %input.input#email{type: "email", placeholder: "Enter your email address..."}
           %input.btn{type: "submit", value: "Sign Up"}
 
     %hr.rule.rule--transparent.mbl.mtxl
