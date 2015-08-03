@@ -1,0 +1,48 @@
+// *************************************
+//
+//   Article
+//   -> Styling for long-form content
+//
+// *************************************
+
+.article
+  blockquote
+    border-left: ($b-borderWidth * 3) $b-borderStyle $c-gray-2
+    color: $c-gray-3
+    font-style: italic
+    margin: 0
+    padding-left: $b-space-l
+  h1, h2, h3, h4, h5, h6
+    margin-bottom: $b-space
+    margin-top: $b-space-xl
+  h1
+    font-size: $b-fontSize-xl
+  h2
+    font-size: $b-fontSize-l
+  h3, h4
+    font-size: $b-fontSize
+  h4
+    color: $c-gray-3
+  h5, h6
+    font-family: $b-fontFamily
+    font-size: $b-fontSize
+    font-style: italic
+    letter-spacing: 0
+    text-transform: initial
+  h6
+    color: $c-gray-3
+  hr
+    @extend .rule
+    margin: $b-space-xl 0
+  img
+    margin-bottom: $b-space
+  ol, ul
+    padding-left: $b-space-l
+  p
+    margin-bottom: $b-space-l
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+// .structure--modifier

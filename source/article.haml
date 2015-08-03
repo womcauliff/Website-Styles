@@ -16,10 +16,8 @@
     .g
       .g-b.g-b--m--2of3
         .card
-          %p Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus porttitor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum.
-          %p Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.
-          %p Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Nulla vitae elit libero, a pharetra augue.
-          %p Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Aenean lacinia bibendum nulla sed consectetur.
+          %article.article
+            = partial "shared/kitchen-sink"
       .g-b.g-b--m--1of3
         = link_to "#", class: "editorial editorial--sidebar", style: "background-image: url(#{image_path 'resource-beach.jpg'})" do
           .editorial-text
@@ -29,3 +27,12 @@
           .meta.meta--bottom
             %h4.meta-author Becky C. Hunter
             %p.meta-date May 8, 2015
+        = link_to "#", class: "editorial editorial--sidebar", style: "background-image: url(#{image_path 'resource-table.jpg'})" do
+          .editorial-text
+            .editoral-video
+              %i.material-icons play_arrow
+            %h2.editorial-title Because I Told You So
+            .meta
+              %h4.meta-author Becky C. Hunter
+              %p.meta-date May 8, 2015
+            .tag Art
