@@ -7,8 +7,10 @@
 
 .card
   background: $c-background-inverted
-  padding: $b-space-xl
+  padding: $b-space * 1.25
   position: relative
+  +respond-to($g-m)
+    padding: $b-space-xl
 
 // -------------------------------------
 //   Modifiers

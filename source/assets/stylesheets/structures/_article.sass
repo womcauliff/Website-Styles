@@ -40,9 +40,14 @@
     padding-left: $b-space-l
   p
     margin-bottom: $b-space-l
+  sup
+    color: $c-gray-3
 
 // -------------------------------------
 //   Modifiers
 // -------------------------------------
 
-// .structure--modifier
+.article--scripture
+  +respond-to($g-m)
+    font-size: $b-fontSize * 1.2
+    line-height: 1.7
