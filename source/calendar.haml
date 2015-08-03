@@ -27,7 +27,7 @@
         %ul.has-events
           - 10.times do
             = partial "shared/event"
-        = link_to "Load more", "#", class: "pagination"
+        = link_to "Load more", "#", class: "pagination mbl"
       .g-b.g-b--m--1of4
         %hr.rule.mbl
         %table.calendar.mbxl
@@ -36,14 +36,14 @@
               %td
                 = link_to "#" do
                   %i.material-icons keyboard_arrow_left
-              %td{colspan: '2'} August
+              %td.calendar-month{colspan: '2'} August
               %td
                 = link_to "#" do
                   %i.material-icons keyboard_arrow_right
               %td
                 = link_to "#" do
                   %i.material-icons keyboard_arrow_left
-              %td 2015
+              %td.calendar-year 2015
               %td
                 = link_to "#" do
                   %i.material-icons keyboard_arrow_right
