@@ -1,0 +1,41 @@
+.hero.hero--video.tac
+  .hero-media{style: "background-image: url(https://unsplash.it/1000/700/?blur)"}
+  .hero-content
+    .cell.cell--s
+      .video
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3zCKk6kIgQc" frameborder="0" allowfullscreen></iframe>
+    .cell
+      %ul.breadcrumbs.breadcrumbs--transparent
+        %li= link_to "Home", "index.html"
+        %li= link_to "Resources", "resources.html"
+        %li= link_to "Category", "#"
+      %h1.heading.heading--l Miracles
+
+.row
+  .cell
+    %hr.rule.rule--transparent.mbl
+    %h2.heading.heading--m.mbl.tac.tci Related Resources
+    .has-editorials
+      = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'resource-table.jpg'})" do
+        .editorial-text
+          .editoral-video
+            %i.material-icons play_arrow
+          %h2.editorial-title Because I Told You So
+          .meta
+            %h4.meta-author Becky C. Hunter
+            %p.meta-date May 8, 2015
+          .tag Art
+      = link_to "#", class: "editorial", style: "background-image: url(#{image_path 'resource-beach.jpg'})" do
+        .editorial-text
+          %h2.editorial-title Small Miracles
+          .meta
+            %h4.meta-author Becky C. Hunter
+            %p.meta-date May 8, 2015
+          .tag Wisdom
+      = link_to "#", class: "editorial editorial--imageless" do
+        .editorial-text
+          %p My friend Cindy was sent home from the hospital on Tuesday, but on Wednesday they had to take her back to the ER. She has heart arrhythmia and needs an ablation. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum. Vestibulum id ligula porta felis euismod semper. Maecenas faucibus mollis interdum.
+        .meta.meta--inverted
+          %h4.meta-author Carol Boldman
+          %p.meta-date May 8, 2015
+          .tag Prayer

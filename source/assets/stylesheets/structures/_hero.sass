@@ -84,6 +84,18 @@
     opacity: 0.5
     position: absolute
 
+// ---- Video ----- //
+
+.hero--video
+  background-image: linear-gradient(rgba($c-black, 0) 0%, rgba($c-black, 0.5) 75%, $c-black 100%)
+  position: relative
+  .hero-content
+    padding: ($b-space-xl * 2) ($g-gutter / 2) $b-space
+    +respond-to($g-m)
+      padding: ($b-space-xl * 3.5) $g-gutter $b-space
+  .hero-media
+    position: absolute
+
 // -------------------------------------
 //   States
 // -------------------------------------

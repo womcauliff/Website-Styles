@@ -1,69 +1,75 @@
-.row.row--gray
-  .cell.well.well--page
-    .card
-      %header.mbxl
-        %ul.breadcrumbs
-          %li= link_to "Home", "#"
-          %li= link_to "Resources", "resources.html"
-          %li= link_to "Category", "#"
-        %h1.heading.heading--xl Live Generously
+.hero.hero--resource
+  .hero-media{style: "background-image: url(#{image_path 'resource-ocean.jpg'})"}
+  .hero-content
+    .cell
+      %ul.breadcrumbs.breadcrumbs--transparent
+        %li= link_to "Home", "index.html"
+        %li= link_to "Resources", "resources.html"
+        %li= link_to "Category", "#"
+  .hero-extend
+    .cell
+      %h1.heading.heading--l Live Generously
 
-      .g
-        .g-b.g-b--l--1of3
-          %h2.heading.heading--italic.heading--m About this need
-          %hr.rule.mtm
-          %p Single mother awaiting child support to aid in care for her children.
-          %dl.dictionary.mbm
+.cell
+  .card
+    .g
+      .g-b.g-b--l--1of3
+        %h2.heading.heading--italic.heading--m About this need
+        %hr.rule.mtm
+        %p Single mother awaiting child support to aid in care for her children.
+        %dl.dictionary.mbm
+          %dt.dictionary-term Date:
+          %dd.dictionary-definition June 10, 2015
+          %dt.dictionary-term Time of Day:
+          %dd.dictionary-definition Morning
+          %dt.dictionary-term Total Read:
+          %dd.dictionary-definition 235 people
+        = link_to "View all opportunities", "#", class: "dib mbl tsxs"
+      .g-b.g-b--m--1of2.g-b--l--1of3
+        %h2.heading.heading--italic.heading--m Totals
+        %hr.rule.mbm.mtm
+        %p.fl.tsxs Needed
+        %p.fr.tsxl $906
+        %hr.rule.mbm
+        %p.fl.tsxs Received
+        %p.fr.tsxl $569
+        %hr.rule.mbm
+        %p.fl.tsxs Difference
+        %p.fr.tcr.tsxl $337
+      .g-b.g-b--m--1of2.g-b--l--1of3
+        .card.card--deck.pal.mbl
+          = link_to "Help fulfill this need", "#", class: "btn btn--full btn--serif mbm"
+          %dl.dictionary
             %dt.dictionary-term Date:
             %dd.dictionary-definition June 10, 2015
             %dt.dictionary-term Time of Day:
             %dd.dictionary-definition Morning
             %dt.dictionary-term Total Read:
             %dd.dictionary-definition 235 people
-          = link_to "View all opportunities", "#", class: "dib mbl tsxs"
-        .g-b.g-b--m--1of2.g-b--l--1of3
-          %h2.heading.heading--italic.heading--m Totals
-          %hr.rule.mbm.mtm
-          %p.fl.tsxs Needed
-          %p.fr.tsxl $906
-          %hr.rule.mbm
-          %p.fl.tsxs Received
-          %p.fr.tsxl $569
-          %hr.rule.mbm
-          %p.fl.tsxs Difference
-          %p.fr.tcr.tsxl $337
-        .g-b.g-b--m--1of2.g-b--l--1of3
-          .card.card--deck.pal.mbl
-            = link_to "Help fulfill this need", "#", class: "btn btn--full btn--serif mbm"
-            %dl.dictionary
-              %dt.dictionary-term Date:
-              %dd.dictionary-definition June 10, 2015
-              %dt.dictionary-term Time of Day:
-              %dd.dictionary-definition Morning
-              %dt.dictionary-term Total Read:
-              %dd.dictionary-definition 235 people
-        .g-b.g-b--l--1of3.fr
-          %hr.rule.mbl
-          = link_to "Previous", "#", class: "btn btn--outline btn--small fl"
-          = link_to "Next ", "#", class: "btn btn--outline btn--small fr"
-          
+      .g-b.g-b--l--1of3.fr
+        %hr.rule.mbl
+        = link_to "Previous", "#", class: "btn btn--outline btn--small fl"
+        = link_to "Next ", "#", class: "btn btn--outline btn--small fr"
+        
 
-.row.row--inverted
+.row
   .cell.well
     .g
       .g-b.g-b--m--1of2
-        %h2.heading.heading--italic.heading--m.mbm Next Steps in Living Generously
-        %hr.rule.mbm
-        %p.tss Fermentum massa justo sit amet risus. Etiam porta sem malesuada.
-        %ul.columns.mbl.tsxs
-          %li= link_to "Give your Tithes &amp; Offerings", "#"
-          %li= link_to "Serve at a Northland site", "#"
-          %li= link_to "Go on a Distributed Journey", "#"
-          %li= link_to "Serve in the local community", "#"
-          %li= link_to "Join the children's ministry team", "#"
-          %li= link_to "Start a community small group", "#"
+        .card
+          %h2.heading.heading--italic.heading--m.mbm Next Steps in Living Generously
+          %hr.rule.mbm
+          %p.tss Fermentum massa justo sit amet risus. Etiam porta sem malesuada.
+          %ul.columns.mbf.tsxs
+            %li= link_to "Give your Tithes &amp; Offerings", "#"
+            %li= link_to "Serve at a Northland site", "#"
+            %li= link_to "Go on a Distributed Journey", "#"
+            %li= link_to "Serve in the local community", "#"
+            %li= link_to "Join the children's ministry team", "#"
+            %li= link_to "Start a community small group", "#"
       .g-b.g-b--m--1of2
-        %h2.heading.heading--italic.heading--m.mbm Tithes &amp; Offerings
-        %hr.rule.mbm
-        %p.tss When you give your tithes and offerings to Northland, you are bringing them to Almighty God as an act of worship for who He is and what He has done. This act of obedience is God's invitation into a deeper understanding of what it means to live generously.
-        = link_to "Give my Tithes &amp; Offerings", "#", class: "dib mbl"
+        .card
+          %h2.heading.heading--italic.heading--m.mbm Tithes &amp; Offerings
+          %hr.rule.mbm
+          %p.tss When you give your tithes and offerings to Northland, you are bringing them to Almighty God as an act of worship for who He is and what He has done. This act of obedience is God's invitation into a deeper understanding of what it means to live generously.
+          = link_to "Give my Tithes &amp; Offerings", "#"
