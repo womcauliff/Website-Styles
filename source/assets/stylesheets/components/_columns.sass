@@ -1,0 +1,17 @@
+// *************************************
+//
+//   Columns
+//   -> Non-grid-based columns
+//
+// *************************************
+
+.columns
+  column-count: 2
+  column-gap: $g-gutter
+  +respond-to($g-s)
+    column-count: 1
+  +respond-to($g-m)
+    column-count: 2
+
+ul.columns
+  padding-left: 0

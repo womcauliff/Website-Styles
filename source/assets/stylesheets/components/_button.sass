@@ -46,6 +46,21 @@
     background: $c-accent
     color: $c-white
 
+.btn--outline
+  background: none
+  border: $b-borderWidth $b-borderStyle $c-gray-2
+  color: $c-accent
+  &:hover,
+  &:focus
+    background: none
+    border-color: $c-accent
+    color: $c-accent
+
+.btn--serif
+  font-family: $b-fontFamily
+  letter-spacing: 0
+  text-transform: initial
+
 .btn--transparent
   background: rgba($c-black, 0.5)
   &:hover,

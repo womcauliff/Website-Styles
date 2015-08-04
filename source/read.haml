@@ -29,7 +29,7 @@
             = link_to "John 1:1&ndash;12", "https://www.bible.com/bible/1/jhn.1"
         .g-b.g-b--m--1of3
           .card.card--deck.pal.mbl
-            = link_to "Mark as Read", "#", class: "btn btn--full mbm"
+            = link_to "Mark as Read", "#", class: "btn btn--full btn--serif mbm"
             %dl.dictionary
               %dt.dictionary-term Date:
               %dd.dictionary-definition June 10, 2015
@@ -38,24 +38,27 @@
               %dt.dictionary-term Total Read:
               %dd.dictionary-definition 235 people
           %hr.rule.mbl
-          = link_to "Previous", "#", class: "fl tss twb"
-          = link_to "Next ", "#", class: "fr tss twb"
+          = link_to "Previous", "#", class: "btn btn--outline btn--small fl"
+          = link_to "Next ", "#", class: "btn btn--outline btn--small fr"
 
 .row.row--inverted
   .cell.well
     .g
       .g-b.g-b--m--1of3
         %h2.heading.heading--italic.heading--m.mbm Reading the Bible
+        %hr.rule.mbm
         %p.tss Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada.
-        = link_to "Read More", "#"
+        = link_to "Read More", "#", class: "dib mbl"
       .g-b.g-b--m--1of3
         %h2.heading.heading--italic.heading--m.mbm Reading Resources
+        %hr.rule.mbm
         %p.tss Fermentum massa justo sit amet risus. Etiam porta sem malesuada.
-        %ul.tss
+        %ul.mbl.tsxs
           %li= link_to "The PR3 Method", "#"
           %li= link_to "The S.O.A.P. Method", "#"
           %li= link_to "E100 Reading Plan", "#"
       .g-b.g-b--m--1of3
         %h2.heading.heading--italic.heading--m.mbm Praying Scripture Together
+        %hr.rule.mbm
         %p.tss Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada.
-        = link_to "Read More", "#"
+        = link_to "Read More", "#", class: "dib mbl"
