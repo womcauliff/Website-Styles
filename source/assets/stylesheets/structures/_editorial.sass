@@ -49,6 +49,7 @@
 
 // ----- Styles ----- //
 
+.editorial--financial,
 .editorial--imageless
   background: $c-white
   justify-content: space-between
@@ -67,11 +68,15 @@
     padding: 0
     &::after
       +stretch
-      background-image: linear-gradient(rgba($c-white, 0) 50%, $c-white)
+      background-image: linear-gradient(rgba($c-white, 0) 75%, $c-white)
       content: ''
     p
       +respond-to($g-m)
         font-size: $b-fontSize * 0.85 !important
+
+.editorial--financial
+  .editorial-text::after
+    display: none
 
 .editorial--sidebar
   height: $b-space-xl * 5
