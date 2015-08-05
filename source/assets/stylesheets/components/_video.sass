@@ -7,13 +7,56 @@
 
 .video
   margin-bottom: $b-space-l
-  padding-bottom: 50%
-  padding-top: 25px
-  position: relative
-  height: 0
-  iframe
-    height: 100%
+
+// -------------------------------------
+//   Modifiers
+// -------------------------------------
+
+.video--modal
+  display: none
+  &::before
+    background: rgba($c-black, 0.85)
+    bottom: 0
+    content: ''
     left: 0
-    position: absolute
+    position: fixed
+    right: 0
     top: 0
-    width: 100%
+    z-index: $z-modal - 1
+
+.video--modal.is-shown
+  display: block
+
+// -------------------------------------
+//   Scaffolding
+// -------------------------------------
+
+.video-close
+  background: rgba($c-accent, 0.85)
+  border-radius: 50%
+  color: $c-white
+  cursor: pointer
+  font-size: $b-fontSize-xl
+  height: 42px
+  line-height: 38px
+  position: fixed
+  right: $b-space-l
+  text-align: center
+  top: $b-space-l
+  width: 42px
+  z-index: $z-modal + 1
+  &:hover
+    background: rgba($c-accent, 0.5)
+
+.video-modal
+  left: $b-space
+  margin: auto
+  max-width: $b-maxWidth
+  position: fixed
+  right: $b-space
+  top: 50%
+  transform: translateY(-50%)
+  z-index: $z-modal
+  +respond-to($g-m)
+    left: $g-gutter
+    right: $g-gutter

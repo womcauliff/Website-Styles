@@ -3,7 +3,7 @@
   .hero-content
     .cell
       %h1.heading.heading--xl A Church Distributed
-      = link_to "#", class: "download" do
+      = link_to "https://www.youtube.com/watch?v=3zCKk6kIgQc", class: "download", data: {video: '<iframe width="560" height="315" src="https://www.youtube.com/embed/MLyvPK1V6BY" frameborder="0" allowfullscreen></iframe>'} do
         .download-thumbnail{style: "background-image: url(#{image_path 'hero-home.jpg'})"}
         %h2.tsxs Watch the Film
         %p.mbf You're invited to <em>be</em> the church.
@@ -104,3 +104,7 @@
       %cite &ndash; Jesus
     %p What started with Peter two-thousand years ago extends to you today. Jesus has invited you into a community that is breaking the gates of hell in personal lives, families, and the world at large. You belong in this family and you have a part to play.
     %p= link_to "Find your church", "#"
+
+.video.video--modal
+  .video-close &#215;
+  .video-modal

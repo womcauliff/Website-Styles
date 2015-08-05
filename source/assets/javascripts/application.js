@@ -1,4 +1,37 @@
 // --------------------------------------
+//  Download Video
+// --------------------------------------
+
+$(function() {
+  $('.download').on('click', function(e) {
+    var video = $(this).data('video');
+    if (video) {
+      $('.video.video--modal').addClass('is-shown');
+      $('.video-modal').append(video).fitVids();
+      e.preventDefault();
+    }
+  });
+  $('.video-close').on('click', function() {
+    $('.video.video--modal').removeClass('is-shown');
+    $('.video-modal').empty();
+  });
+  $(window).on('keyup', function(e) {
+    if (e.keyCode == 27) {
+      $('.video.video--modal').removeClass('is-shown');
+      $('.video-modal').empty();
+    }
+  });
+});
+
+// --------------------------------------
+//  FitVids
+// --------------------------------------
+
+$(function() {
+  $('.video').fitVids();
+})
+
+// --------------------------------------
 //  Navigation Toggle
 // --------------------------------------
 
@@ -20,17 +53,6 @@ $(function() {
       $('.navigation-search').removeClass('is-searching');
     }
   });
-
-  // var lastScrollTop = 0;
-  // $(window).scroll(function(event){
-  //    var st = $(this).scrollTop();
-  //    if (st > lastScrollTop){
-  //       $('.navigation').addClass('is-hidden');
-  //    } else {
-  //       $('.navigation').removeClass('is-hidden');
-  //    }
-  //    lastScrollTop = st;
-  // });
 
 });
 
