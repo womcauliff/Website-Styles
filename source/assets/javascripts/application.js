@@ -64,7 +64,7 @@ $(function() {
 var home = document.getElementById("hero-home");
 vidbg(home, [
   {
-    src: 'assets/videos/placeholder.mp4',
+    src: 'https://s3.amazonaws.com/nacdvideo/bgloop.mp4',
     type: 'mp4'
   }
 ], true);
